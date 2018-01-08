@@ -21,8 +21,6 @@ angular.module('carRent').directive('carSearch', ['constants',
                             }, 1500);
                         }
                     });
-
-
                 }
             ]
         };

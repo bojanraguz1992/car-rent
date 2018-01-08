@@ -24,6 +24,14 @@ angular.module('carRent').directive('headerDirective', ['constants',
                         ]
                     }
                     $scope.vm = vm;
+
+                    vm.toggleMenu = function(){
+                        vm.menuOpen = !vm.menuOpen;
+                    }
+
+                    vm.closeMenu = function(){
+                        vm.menuOpen = false;
+                    }
                 }
             ]
         };

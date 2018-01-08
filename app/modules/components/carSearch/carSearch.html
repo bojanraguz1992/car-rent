@@ -2,7 +2,7 @@
     <div class="row row__margin">
         <div class="loader" ng-if="!vm.dataLoaded"></div>
 
-        <div ng-repeat="car in vm.cars" class="car" ng-if="vm.dataLoaded">
+        <div ng-repeat="car in vm.cars track by $index" class="car" ng-if="vm.dataLoaded">
             <img ng-src="{{car.thumbnail}}" />
             <div class="car__text" ui-sref="master.car({carId: car.id, carDetails: car})">
                 <h3>

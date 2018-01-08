@@ -13,18 +13,97 @@
         font-family: $fontSecondary;
         font-weight: 400;
     }
+    @include element('menu') {
+        flex: 2;
+        display: flex;
+        justify-content: space-between;
+        @media(max-width: $tablet) {
+            display: none;
+        }
+        @include modifier('show') {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            
+            ul {
+                flex-direction: column;
+            }
+        }
+    }
+    @include element('mobile') {
+        @media(min-width: 768px) {
+            display: none;
+        }
+        @include modifier('menu') {
+            position: absolute;
+            margin: auto;
+            width: $bar-width;
+            height: $bar-height + $bar-spacing*2;
+            cursor: pointer;
+            outline: none;
+            right: 15px;
+            top: 15px;
+            .bar,
+            .bar:after,
+            .bar:before {
+                width: $bar-width;
+                height: $bar-height;
+            }
+            .bar {
+                position: relative;
+                transform: translateY($bar-spacing);
+                background: rgba(255, 255, 255, 1);
+                transition: all 0ms 300ms;
+                &.animate {
+                    background: rgba(255, 255, 255, 0);
+                }
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: $bar-spacing;
+                    background: rgba(255, 255, 255, 1);
+                    transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+                }
+            }
+            .bar:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: $bar-spacing;
+                background: rgba(255, 255, 255, 1);
+                transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+            }
+            .bar.animate:after {
+                top: 0;
+                transform: rotate(45deg);
+                transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+            }
+            .bar.animate:before {
+                bottom: 0;
+                transform: rotate(-45deg);
+                transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+            }
+        }
+    }
     @include element('list') {
         list-style-type: none;
         padding: 0;
         margin: 0;
         display: flex;
         align-items: center;
+        justify-content: center;
+        flex: 2;
         @include modifier('item') {
             margin: 0 10px;
             font-family: $fontSecondary;
             font-size: 19px;
             color: #fff;
             font-weight: 500;
+            @media(max-width: $tablet) {
+                margin: 15px 0;
+            }
         }
     }
 }

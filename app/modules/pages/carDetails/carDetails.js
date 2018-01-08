@@ -6,20 +6,14 @@ angular.module('carRent').directive('carDetails', ['constants',
             templateUrl: constants.pagePath + 'carDetails/carDetails.html',
             controller: [
                 '$scope',
+                'getCarsService',
                 '$stateParams',
-                function ($scope, $stateParams) {
+                function ($scope, getCarsService, $stateParams) {
                     var vm = {
-                        carDetails: $stateParams.carDetails,
                         minDate: moment().format('l'),
                         updateMaxDate: updateMaxDate,
                         showCheckout: showCheckout,
-                        car: {
-                            name: $stateParams.carDetails.name,
-                            price: $stateParams.carDetails.price,
-                            thumbnail: $stateParams.carDetails.thumbnail,
-                            pickup: moment().format('l'),
-                            return: moment().add(1, 'days').format('l')
-                        }
+                        
                     }
 
                     $scope.vm = vm;
@@ -37,6 +31,26 @@ angular.module('carRent').directive('carDetails', ['constants',
                         vm.showModal = true;
                     }
 
+                    function getCarById(){
+                        getCarsService.getAllCars().then(function(res){
+                            for(var i = 0; i < res.data.length; i++){
+                                if(res.data[i].id === parseInt($stateParams.carId)){
+                                    vm.carDetails = res.data[i];
+                                    break;
+                                }
+                            }
+                            
+                            vm.car = {
+                                name: vm.carDetails.name,
+                                price: vm.carDetails.price,
+                                thumbnail: vm.carDetails.thumbnail,
+                                pickup: moment().format('l'),
+                                return: moment().add(1, 'days').format('l')
+                            }
+                        });
+                    }
+
+                    getCarById();
                 }
             ]
         };

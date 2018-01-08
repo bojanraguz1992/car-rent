@@ -1,15 +1,18 @@
-<div class="container">
+<div class="container" ng-cloak="">
     <div class="row row__margin">
-        <div ng-repeat="car in vm.cars "  class="car">
+        <div class="loader" ng-if="!vm.dataLoaded"></div>
+
+        <div ng-repeat="car in vm.cars" class="car" ng-if="vm.dataLoaded">
             <img ng-src="{{car.thumbnail}}" />
             <div class="car__text" ui-sref="master.car({carId: car.id, carDetails: car})">
                 <h3>
                     {{car.name}}
                 </h3>
                 <h4>
-                   Price: ${{car.price}}
+                    Price: ${{car.price}}
                 </h4>
             </div>
         </div>
+
     </div>
 </div>

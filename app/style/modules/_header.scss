@@ -11,7 +11,7 @@
         color: #fff;
         font-size: 32px;
         font-family: $fontSecondary;
-        font-weight: bold;
+        font-weight: 400;
     }
     @include element('list') {
         list-style-type: none;

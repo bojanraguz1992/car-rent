@@ -1,7 +1,6 @@
     [{
             "id": 1,
             "name": "Car name 1",
-            "reserved": 4,
             "photos": [
                 "https://i.pinimg.com/originals/86/3b/47/863b475cfc48af3d2338cdceba616885.jpg",
                 "https://icdn-1.motor1.com/images/mgl/AqEQy/s1/rimac-concept-one.jpg",
@@ -14,7 +13,6 @@
         {
             "id": 2,
             "name": "Car name 2",
-            "reserved": 3,
             "photos": [
                 "https://i.pinimg.com/originals/86/3b/47/863b475cfc48af3d2338cdceba616885.jpg",
                 "https://icdn-1.motor1.com/images/mgl/AqEQy/s1/rimac-concept-one.jpg",
@@ -27,7 +25,6 @@
         {
             "id": 33,
             "name": "Car name 3",
-            "reserved": 2,
             "photos": [
                 "https://i.pinimg.com/originals/86/3b/47/863b475cfc48af3d2338cdceba616885.jpg",
                 "https://icdn-1.motor1.com/images/mgl/AqEQy/s1/rimac-concept-one.jpg",
@@ -41,7 +38,6 @@
         {
             "id": 311,
             "name": "Car name 11",
-            "reserved": 31,
             "photos": [
                 "https://i.pinimg.com/originals/86/3b/47/863b475cfc48af3d2338cdceba616885.jpg",
                 "https://icdn-1.motor1.com/images/mgl/AqEQy/s1/rimac-concept-one.jpg",
@@ -55,7 +51,6 @@
         {
             "id": 3,
             "name": "Car name 3",
-            "reserved": 23,
             "photos": [
                 "https://i.pinimg.com/originals/86/3b/47/863b475cfc48af3d2338cdceba616885.jpg",
                 "https://icdn-1.motor1.com/images/mgl/AqEQy/s1/rimac-concept-one.jpg",
@@ -69,7 +64,6 @@
         {
             "id": 11,
             "name": "Car name 11",
-            "reserved": 11,
             "photos": [
                 "https://i.pinimg.com/originals/86/3b/47/863b475cfc48af3d2338cdceba616885.jpg",
                 "https://icdn-1.motor1.com/images/mgl/AqEQy/s1/rimac-concept-one.jpg",
@@ -83,7 +77,6 @@
         {
             "id": 21,
             "name": "Car name 21",
-            "reserved": 22,
             "photos": [
                 "https://i.pinimg.com/originals/86/3b/47/863b475cfc48af3d2338cdceba616885.jpg",
                 "https://icdn-1.motor1.com/images/mgl/AqEQy/s1/rimac-concept-one.jpg",
@@ -97,7 +90,6 @@
         {
             "id": 31,
             "name": "Car name 31",
-            "reserved": 199,
             "photos": [
                 "https://i.pinimg.com/originals/86/3b/47/863b475cfc48af3d2338cdceba616885.jpg",
                 "https://icdn-1.motor1.com/images/mgl/AqEQy/s1/rimac-concept-one.jpg",

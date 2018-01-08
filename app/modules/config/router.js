@@ -15,6 +15,13 @@ angular.module('carRent').config(['$stateProvider', '$urlRouterProvider', '$loca
                 url: '/cars',
                 template: '<car-list></car-list>'
             })
+            .state('master.checkout', {
+                url: '/checkout',
+                params: {
+                    checkout: ''
+                },
+                template: '<checkout-page></checkout-page>'
+            })
             .state('master.car', {
                 url: '/cars/{carId}',
                 params: {

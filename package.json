@@ -10,10 +10,11 @@
   "license": "ISC",
   "dependencies": {
     "event-stream": "^3.3.4",
+    "express": "^4.16.2",
     "gulp": "^3.9.1",
-    "gulp-inject": "^4.3.0",
-    "main-bower-files": "^2.13.1",
     "gulp-autoprefixer": "^4.1.0",
-    "gulp-sass": "^3.1.0"
+    "gulp-inject": "^4.3.0",
+    "gulp-sass": "^3.1.0",
+    "main-bower-files": "^2.13.1"
   }
 }

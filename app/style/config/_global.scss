@@ -47,7 +47,6 @@ a {
     border: 0;
     padding: 20px 30px;
     cursor: pointer;
-    font-weight: bold;
     border-radius: 3px;
     font-family: $fontPrimary;
     display: inline-block;
@@ -77,6 +76,14 @@ a {
     @include element('responsive') {
         max-width: 100%;
         height: auto;
+    }
+    @include element('round') {
+        height: 600px;
+        margin-bottom: 100px;
+        border-radius: 4px;
+        box-shadow: 0 30px 85px 10px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        background-position: center;
     }
 }
 

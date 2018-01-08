@@ -45,7 +45,6 @@ a {
   border: 0;
   padding: 20px 30px;
   cursor: pointer;
-  font-weight: bold;
   border-radius: 3px;
   font-family: "Montserrat", sans-serif;
   display: inline-block;
@@ -70,6 +69,15 @@ a {
 .img__responsive {
   max-width: 100%;
   height: auto; }
+
+.img__round {
+  height: 600px;
+  margin-bottom: 100px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 30px 85px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 30px 85px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  background-position: center; }
 
 .link {
   font-family: "Raleway", sans-serif;

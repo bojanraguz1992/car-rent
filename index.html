@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="carRent">
+<html>
 
 <head>
     <base href="/">
@@ -8,13 +8,14 @@
         Car rent
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.5/angular-material.css" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.5/angular-material.css" rel="stylesheet" type="text/css"
+    />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700|Raleway" rel="stylesheet">
-    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" >
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
     <link href="/app/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body ng-app="carRent">
 
     <!-- bower:js -->
     <script src="/bower_components/angular/angular.js"></script>
@@ -25,7 +26,9 @@
     <script src="/bower_components/angular-aria/angular-aria.js"></script>
     <script src="/bower_components/angular-material/angular-material.js"></script>
     <!-- endinject -->
+
     <div ui-view></div>
+    
     <!-- inject:js -->
     <script src="app/angular.module.js"></script>
     <script src="app/modules/common/constant.js"></script>
@@ -41,6 +44,7 @@
     <script src="app/modules/components/slider/slider.js"></script>
     <script src="app/modules/components/video/video.js"></script>
     <script src="app/modules/pages/carDetails/carDetails.js"></script>
+    <script src="app/modules/pages/checkout/checkout.js"></script>
     <script src="app/modules/pages/details/details.js"></script>
     <script src="app/modules/pages/homepage/homepage.js"></script>
     <!-- endinject -->

@@ -1,4 +1,4 @@
-angular.module('carRent').directive('footerDirective', ['constants',
+angular.module('carRent').directive('contact', ['constants',
     function (constants) {
         'use strict';
         return {

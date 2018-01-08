@@ -4,7 +4,8 @@ angular.module('carRent').directive('slider', ['constants',
         return {
             restrict: 'E',
             scope: {
-                images: '='
+                images: '=',
+                imageLoaded: '='
             },
             templateUrl: constants.componentsPath + 'slider/slider.html',
             controller: [
@@ -21,17 +22,17 @@ angular.module('carRent').directive('slider', ['constants',
                     $scope.vm = vm;
 
                     vm.getWindowWidth = function () {
-                        return document.getElementById('slider').clientWidth;;
+                        return document.getElementById('slider').clientWidth;
                     }
 
-                    angular.element($window).bind('resize', () => {
-                        const vm = $scope;
-                        $scope.$apply(() => {
+                    angular.element($window).bind('resize', function () {
+                        var vm = $scope;
+                        $scope.$apply(function () {
                             vm.animateSlides(vm.active, 0);
                         })
                     });
 
-                    vm.goToSlide = (index) => {
+                    vm.goToSlide = function (index) {
                         var slideDiffrence = 0;
                         index = index === -1 ? vm.sliderLength : index;
                         index = index === vm.sliderLength + 1 ? 0 : index;
@@ -40,7 +41,7 @@ angular.module('carRent').directive('slider', ['constants',
                         vm.animateSlides(index, vm.transition * slideDiffrence);
                     }
 
-                    vm.animateSlides = (index, transition) => {
+                    vm.animateSlides = function (index, transition) {
                         vm.sliderStyle = {
                             transform: 'translate3d(' + (-index * vm.getWindowWidth()) + 'px,0px, 0px)',
                             transition: transition + 's'

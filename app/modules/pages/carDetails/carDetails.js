@@ -6,18 +6,23 @@ angular.module('carRent').directive('carDetails', ['constants',
             templateUrl: constants.pagePath + 'carDetails/carDetails.html',
             controller: [
                 '$scope',
-                function ($scope) {
+                '$stateParams',
+                function ($scope, $stateParams) {
                     var vm = {
+                        carDetails: $stateParams.carDetails,
                         minDate: moment().format('l'),
                         updateMaxDate: updateMaxDate,
                         showCheckout: showCheckout,
                         car: {
+                            name: $stateParams.carDetails.name,
+                            price: $stateParams.carDetails.price,
+                            thumbnail: $stateParams.carDetails.thumbnail,
                             pickup: moment().format('l'),
-                            return: moment().add(55, 'days').format('l')
+                            return: moment().add(1, 'days').format('l')
                         }
                     }
-                    $scope.vm = vm;
 
+                    $scope.vm = vm;
                     function updateMaxDate() {
                         vm.maxDate = moment(vm.car.pickup).toDate();
                         var EndTime = moment(vm.car.return).toDate();

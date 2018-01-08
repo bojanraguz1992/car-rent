@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row row__margin">
+        <div ng-repeat="car in vm.cars "  class="car">
+            <img ng-src="{{car.thumbnail}}" />
+            <div class="car__text" ui-sref="master.car({carId: car.id, carDetails: car})">
+                <h3>
+                    {{car.name}}
+                </h3>
+                <h4>
+                   Price: ${{car.price}}
+                </h4>
+            </div>
+        </div>
+    </div>
+</div>

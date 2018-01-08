@@ -1,0 +1,18 @@
+<div class="video">
+    <div class="container">
+        <div class="video__image" style="background-image: url(http://www.angelogranata.com/wp-content/uploads/2012/11/ferrari-GTE-rear-4.jpg)">
+            <div class="video__image--play">
+                <span class="ion-play" ng-click="vm.playVideo()"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div ng-if="vm.showVideoModal">
+    <div class="modal">
+        <div class="modal__body">
+            <iframe src="https://player.vimeo.com/video/110155374" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen
+                allowfullscreen></iframe>
+        </div>
+    </div>
+</div>

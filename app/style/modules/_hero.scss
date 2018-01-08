@@ -1,0 +1,175 @@
+.hero {
+    background: url(https://livedemo00.template-help.com/wt_58645/images/background-01-2050x1200.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    @media(max-width: $tablet) {
+        min-height: 100vh;
+        height: auto;
+    }
+    @include element('small') {
+        height: 70vh;
+        @media(max-width: $tablet) {
+            min-height: 70vh;
+        }
+    }
+    @include element('overlay') {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+    @include element('image') {
+        padding: 150px 50px;
+        max-width: $container;
+        background: url(https://gearheads.org/wp-content/uploads/2017/11/muscle-car-burnout.jpg);
+        background-position: center;
+        margin: 0 auto;
+        display: block;
+        box-shadow: 0 30px 85px 10px rgba(0, 0, 0, 0.3);
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 4px;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 2;
+        @media(max-width: $container) {
+            padding: 50px 15px;
+            width: calc(100% - 30px)
+        }
+        @media(max-width: $tablet) {
+            margin: 150px 0 75px 0;
+        }
+    }
+    @include element('title') {
+        font-size: 90px;
+        color: #fff;
+        margin: 0;
+        @media(max-width: $container) {
+            font-size: 60px;
+        }
+    }
+    @include element('desc') {
+        color: #fff;
+        margin: 0;
+        font-family: $fontSecondary;
+        font-size: 20px;
+        line-height: 32px;
+        max-width: 75%;
+        @media(max-width: $container) {
+            width: 100%;
+        }
+    }
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 3;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include element('body') {
+        padding: 8px;
+        background: #fff;
+        border-radius: 5px;
+    }
+}
+
+// .calendar {
+//     position: fixed;
+//     top: 0;
+//     height: 100%;
+//     z-index: 3;
+//     width: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     @include element('row') {
+//         width: calc(100% /7);
+//         float: left;
+//         overflow: hidden;
+//         text-align: center;
+//         background-color: #FFFFFF;
+//         color: #787878;
+//         font-family: $fontSecondary;
+//         height: 50px;
+//         width: 50px;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         @include modifier('disabled') {
+//             visibility: hidden;
+//         }
+//     }
+//     @include element('content') {
+//         border: 2px solid #f5f5f5;
+//         border-radius: 3px;
+//         background: #f5f5f5;
+//     }
+//     @include element('header') {
+//         @include modifier('days') {
+//             font-weight: 600;
+//         }
+//         @include modifier('title') {
+//             display: flex;
+//             align-items: center;
+//             justify-content: space-evenly;
+//             background: #f5f5f5f5;
+//             padding: 20px 0;
+//             h3 {
+//                 font-family: $fontSecondary;
+//             }
+//             span {
+//                 font-size: 24px;
+//                 cursor: pointer;
+//             }
+//         }
+//     }
+//     @include element('body') {
+//         .calendar__row {
+//             cursor: pointer;
+//         }
+//     }
+// }
+._md-datepicker-has-triangle-icon {
+    padding-right: 18px;
+    margin-right: -18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.md-icon-button+.md-datepicker-input-container {
+    margin: 0;
+    border: 0;
+    flex: 1;
+    background: none;
+}
+
+.md-datepicker-triangle-button.md-button.md-icon-button {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    padding: 8px;
+    top: 0;
+    padding: 0;
+    right: 18px;
+    top: 11px;
+}
+
+.md-datepicker-input-mask {
+    display: none;
+}

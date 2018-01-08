@@ -1,0 +1,88 @@
+.container {
+    max-width: $container;
+    display: flex;
+    margin: 0 auto;
+    @media(max-width: 1250px) {
+        padding: 0 15px !important;
+    }
+    @include element('between') {
+        justify-content: space-between;
+        align-items: center;
+    }
+    @include element('center') {
+        align-items: center;
+    }
+    @include element('mini') {
+        max-width: $containerMini;
+        h2 {
+            color: #333;
+            font-family: $fontSecondary;
+            font-size: 48px;
+        }
+    }
+    @include element('column') {
+        flex-direction: column;
+        padding: 110px 0 70px 0;
+    }
+    @include element('holder') {
+        display: flex;
+        margin-top: 50px;
+        @include modifier('line') {
+            height: 2px;
+            width: 125px;
+            background: #f333;
+            display: block;
+        }
+        @include modifier('text') {
+            top: -15px;
+            position: relative;
+            padding-left: 40px;
+            h3 {
+                margin-top: 0;
+                line-height: 33px;
+                color: #333;
+                font-family: $fontSecondary;
+            }
+            p {
+                line-height: 33px;
+                margin-top: 20px;
+                color: #333;
+                font-family: $fontSecondary;
+            }
+        }
+    }
+}
+
+.row {
+    display: flex;
+    .col {
+        flex: 1;
+    }
+    @include element('slider') {
+        slider {
+            width: 100%;
+        }
+        .col {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+    }
+    @media(max-width: 767px) {
+        flex-direction: column;
+    }
+    @include element('margin') {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 150px -15px 0;
+        .car {
+            max-width: calc(33.33% - 30px);
+            @media(max-width: $container) {
+                max-width: calc(50% - 30px);
+            }
+            @media(max-width: $tablet) {
+                max-width: calc(100% - 30px);
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+<nav class="header">
+    <div class="container container__between">
+        <a class="header__logo" ui-sref="master.home">
+            RentacaR
+        </a>
+
+        <ul class="header__list">
+              <li class="header__list--item" ng-repeat="navItem in vm.navigationItems">
+                <a href="#" class="header__list--item">
+                    {{navItem.title}}
+                </a>
+            </li>  
+        </ul>
+{{vm.navigationItems}}
+        <button class="btn btn__secondary" ui-sref="master.cars">
+            Cars
+        </button>
+    </div>
+</nav>

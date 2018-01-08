@@ -1,0 +1,30 @@
+.header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    background: #000;
+    box-shadow: 0 3px 15px 1px rgba(0, 0, 0, 0.3);
+    padding: 15px 0;
+    @include element('logo') {
+        color: #fff;
+        font-size: 32px;
+        font-family: $fontSecondary;
+        font-weight: bold;
+    }
+    @include element('list') {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        @include modifier('item') {
+            margin: 0 10px;
+            font-family: $fontSecondary;
+            font-size: 19px;
+            color: #fff;
+            font-weight: 500;
+        }
+    }
+}

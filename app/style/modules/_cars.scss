@@ -1,0 +1,36 @@
+.car {
+    padding: 0 15px;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    @include element('text') {
+        transition: transform .2s ease-in-out;
+        position: relative;
+        display: inline-block;
+        background: #fff;
+        padding: 20px 25px 25px;
+        box-shadow: 0 0 50px 0 rgba(0, 0, 0, .1);
+        width: 90%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        transform: translateY(-50%);
+        display: block;
+        transition: 0.3s;
+        cursor: pointer;
+        h4,
+        h3 {
+            margin: 7.5px 0;
+            font-family: $fontSecondary;
+            font-weight: 400;
+        }
+        &:hover {
+            background: #1b1a1a;
+            h3,
+            h4 {
+                transition: 0.3s;
+                color: #fff;
+            }
+        }
+    }
+}

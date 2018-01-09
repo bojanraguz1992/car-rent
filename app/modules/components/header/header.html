@@ -7,7 +7,7 @@
         <div class="header__menu">
             <ul class="header__list">
                 <li class="header__list--item" ng-repeat="navItem in vm.navigationItems" ng-click="vm.closeMenu()">
-                    <a href="#" class="header__list--item">
+                    <a ui-sref="master.home({ '#': navItem.id })" class="header__list--item">
                         {{navItem.title}}
                     </a>
                 </li>
@@ -25,16 +25,16 @@
         </div>
     </div>
 
-    <div class="header__menu header__menu--show" ng-if="vm.menuOpen" >
+    <div class="header__menu header__menu--show" ng-if="vm.menuOpen">
         <ul class="header__list">
-            <li class="header__list--item" ng-repeat="navItem in vm.navigationItems">
-                <a href="#" class="header__list--item">
+            <li class="header__list--item" ng-repeat="navItem in vm.navigationItems" ng-click="vm.closeMenu()">
+                <a ui-sref="master.home({ '#': navItem.id })" class="header__list--item">
                     {{navItem.title}}
                 </a>
             </li>
         </ul>
 
-        <button class="btn btn__secondary" ui-sref="master.cars">
+        <button class="btn btn__secondary" ng-click="vm.closeMenu()" ui-sref="master.cars">
             Cars
         </button>
     </div>

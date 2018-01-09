@@ -94,6 +94,11 @@ a {
     padding-bottom: 10px;
     margin-top: 15px;
     display: inline-block;
+    transition: 0.3s;
+    &:hover{
+        color: #ffc0cb;
+        border-color: #ffc0cb;
+    }
 }
 
 .loader {

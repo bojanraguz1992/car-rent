@@ -25,7 +25,9 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            
+            @media(min-width: 768px){
+                display: none;
+            }
             ul {
                 flex-direction: column;
             }
@@ -101,6 +103,10 @@
             font-size: 19px;
             color: #fff;
             font-weight: 500;
+            transition: 0.3s;
+            &:hover{
+                color: #ffc0cb;
+            }
             @media(max-width: $tablet) {
                 margin: 15px 0;
             }

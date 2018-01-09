@@ -8,28 +8,31 @@ angular.module('carRent').directive('headerDirective', ['constants',
                 '$scope',
                 function ($scope) {
                     var vm = {
-                        navigationItems: [
-                            {
-                                title: 'Home'
+                        navigationItems: [{
+                                title: 'Home',
+                                id: 'Home'
                             },
                             {
-                                title: 'About'
+                                title: 'About',
+                                id: 'About'
                             },
                             {
-                                title: 'Offer'
+                                title: 'Offer',
+                                id: 'Offer'
                             },
                             {
-                                title: 'Contact'
+                                title: 'Contact',
+                                id: 'Contact'
                             }
                         ]
                     }
                     $scope.vm = vm;
 
-                    vm.toggleMenu = function(){
+                    vm.toggleMenu = function () {
                         vm.menuOpen = !vm.menuOpen;
                     }
 
-                    vm.closeMenu = function(){
+                    vm.closeMenu = function () {
                         vm.menuOpen = false;
                     }
                 }

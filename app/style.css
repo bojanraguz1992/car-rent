@@ -105,6 +105,8 @@ a {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start; }
+    .loader__holder--small {
+      min-height: auto; }
 
 @-webkit-keyframes spin {
   to {

@@ -13,10 +13,13 @@ angular.module('carRent').directive('carDetails', ['constants',
                         minDate: moment().format('l'),
                         updateMaxDate: updateMaxDate,
                         showCheckout: showCheckout,
-                        
+                        sliderLoaded: false
                     }
 
+                    getCarById();
+
                     $scope.vm = vm;
+
                     function updateMaxDate() {
                         vm.maxDate = moment(vm.car.pickup).toDate();
                         var EndTime = moment(vm.car.return).toDate();
@@ -27,19 +30,19 @@ angular.module('carRent').directive('carDetails', ['constants',
                         }
                     }
 
-                    function showCheckout(){
+                    function showCheckout() {
                         vm.showModal = true;
                     }
 
-                    function getCarById(){
-                        getCarsService.getAllCars().then(function(res){
-                            for(var i = 0; i < res.data.length; i++){
-                                if(res.data[i].id === parseInt($stateParams.carId)){
+                    function getCarById() {
+                        getCarsService.getAllCars().then(function (res) {
+                            for (var i = 0; i < res.data.length; i++) {
+                                if (res.data[i].id === parseInt($stateParams.carId)) {
                                     vm.carDetails = res.data[i];
                                     break;
                                 }
                             }
-                            
+
                             vm.car = {
                                 name: vm.carDetails.name,
                                 price: vm.carDetails.price,
@@ -47,12 +50,11 @@ angular.module('carRent').directive('carDetails', ['constants',
                                 pickup: moment().format('l'),
                                 return: moment().add(1, 'days').format('l')
                             }
+                            // avoid slider problem on load
+                            vm.sliderLoaded = true;
                         });
-                        // avoid slider problem on load
-                        vm.sliderLoaded = true;
                     }
 
-                    getCarById();
                 }
             ]
         };

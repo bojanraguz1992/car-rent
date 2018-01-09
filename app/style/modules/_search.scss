@@ -7,10 +7,16 @@
         background: #27292f;
         fill: #27292f;
         padding: 75px 15px;
+        @media(max-width: $tablet){
+            padding: 45px 15px;
+        }
         @include modifier('title') {
             color: #fff;
             font-size: 50px;
             margin: 0;
+            @media(max-width: $tablet){
+                font-size: 30px;
+            }
         }
     }
     @include element('body') {
@@ -21,6 +27,8 @@
         box-sizing: border-box;
         h4 {
             margin: 0;
+            font-family: $fontSecondary;
+            font-weight: 700;
         }
         input {
             font-family: $fontSecondary;
@@ -32,6 +40,12 @@
             box-sizing: border-box;
             margin: 10px 0;
             max-width: 100%;
+        }
+    }
+    .row{
+        margin: 0 -15px;
+        .col{
+            padding: 0 15px;
         }
     }
 }

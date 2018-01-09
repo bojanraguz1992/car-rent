@@ -48,6 +48,8 @@ angular.module('carRent').directive('carDetails', ['constants',
                                 return: moment().add(1, 'days').format('l')
                             }
                         });
+                        // avoid slider problem on load
+                        vm.sliderLoaded = true;
                     }
 
                     getCarById();

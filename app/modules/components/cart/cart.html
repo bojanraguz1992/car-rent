@@ -1,0 +1,53 @@
+
+
+<div class="container">
+    <div class="search">
+        <div class="search__header">
+            <h3 class="search__header--title">
+                Rent car - {{details.name}}
+            </h3>
+            <h3 class="search__header--title">
+                Total: $ {{vm.price}}
+            </h3>
+        </div>
+        <div class="search__body">
+            <form name="checkoutForm" ng-submit="vm.submitForm()">
+                <div class="col">
+                    <h4>
+                        Email
+                    </h4>
+                    <input placeholder="Enter your email" type="email" required/>
+                </div>
+                <div class="col">
+                    <h4>
+                        Card number
+                    </h4>
+                    <input placeholder="Card number" type="text" required/>
+                </div>
+                <div class="col">
+                    <h4>
+                        CVV
+                    </h4>
+                    <input placeholder="CVV" type="text" required/>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h4>
+                            MM
+                        </h4>
+                        <input placeholder="MM" type="text" required/>
+                    </div>
+                    <div class="col">
+                        <h4>
+                            YYYY
+                        </h4>
+                        <input placeholder="YYYY" type="text" required/>
+                    </div>
+                </div>
+                <button class="btn btn__primary" type="submit">
+                    Pay
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

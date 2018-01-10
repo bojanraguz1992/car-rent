@@ -369,7 +369,7 @@ a {
           margin: 15px 0; } }
 
 .hero {
-  background: url(https://livedemo00.template-help.com/wt_58645/images/background-01-2050x1200.jpg);
+  background: url("img/hero.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -404,7 +404,7 @@ a {
   .hero__image {
     padding: 150px 50px;
     max-width: 1200px;
-    background: url(https://gearheads.org/wp-content/uploads/2017/11/muscle-car-burnout.jpg);
+    background: url("img/banner.jpg");
     background-position: center;
     margin: 0 auto;
     display: block;
@@ -451,6 +451,25 @@ a {
       .hero__desc {
         width: 100%; } }
 
+footer {
+  background: url("img/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 70px 0; }
+  footer .container__holder--line {
+    width: 25px;
+    background: #ccc; }
+  footer .container__holder--text h3,
+  footer .container__holder--text p {
+    margin: 0;
+    font-weight: 400;
+    color: #fff; }
+  @media (max-width: 767px) {
+    footer {
+      padding: 70px 0 30px 0; }
+      footer .col {
+        margin-bottom: 40px; } }
+
 .modal {
   position: fixed;
   top: 0;
@@ -470,59 +489,6 @@ a {
     padding: 8px;
     background: #fff;
     border-radius: 5px; }
-
-._md-datepicker-has-triangle-icon {
-  padding-right: 18px;
-  margin-right: -18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-
-.md-icon-button + .md-datepicker-input-container {
-  margin: 0;
-  border: 0;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  background: none; }
-
-.md-datepicker-triangle-button.md-button.md-icon-button {
-  height: 50px;
-  width: 50px;
-  position: absolute;
-  padding: 8px;
-  top: 0;
-  padding: 0;
-  right: 18px;
-  top: 11px; }
-
-.md-datepicker-input-mask {
-  display: none; }
-
-footer {
-  background: url(https://livedemo00.template-help.com/wt_58645/images/background-01-2050x1200.jpg);
-  background-position: center;
-  background-size: cover;
-  padding: 70px 0; }
-  footer .container__holder--line {
-    width: 25px;
-    background: #ccc; }
-  footer .container__holder--text h3,
-  footer .container__holder--text p {
-    margin: 0;
-    font-weight: 400;
-    color: #fff; }
-  @media (max-width: 767px) {
-    footer {
-      padding: 70px 0 30px 0; }
-      footer .col {
-        margin-bottom: 40px; } }
 
 .video__image {
   width: 100%;
@@ -743,3 +709,37 @@ footer {
         -webkit-transition: 0.3s;
         transition: 0.3s;
         color: #fff; }
+
+._md-datepicker-has-triangle-icon {
+  padding-right: 18px;
+  margin-right: -18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.md-icon-button + .md-datepicker-input-container {
+  margin: 0;
+  border: 0;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: none; }
+
+.md-datepicker-triangle-button.md-button.md-icon-button {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  padding: 8px;
+  top: 0;
+  padding: 0;
+  right: 18px;
+  top: 11px; }
+
+.md-datepicker-input-mask {
+  display: none; }

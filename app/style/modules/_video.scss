@@ -1,3 +1,19 @@
+.modal {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    z-index: 3;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include element('body') {
+        padding: 8px;
+        background: #fff;
+        border-radius: 5px;
+    }
+}
+
 .video {
     @include element('image') {
         width: 100%;

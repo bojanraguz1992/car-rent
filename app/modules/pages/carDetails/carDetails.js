@@ -8,7 +8,8 @@ angular.module('carRent').directive('carDetails', ['constants',
                 '$scope',
                 'getCarsService',
                 '$stateParams',
-                function ($scope, getCarsService, $stateParams) {
+                '$state',
+                function ($scope, getCarsService, $stateParams, $state) {
                     var vm = {
                         minDate: moment().format('l'),
                         updateMaxDate: updateMaxDate,
@@ -43,15 +44,19 @@ angular.module('carRent').directive('carDetails', ['constants',
                                 }
                             }
 
-                            vm.car = {
-                                name: vm.carDetails.name,
-                                price: vm.carDetails.price,
-                                thumbnail: vm.carDetails.thumbnail,
-                                pickup: moment().format('l'),
-                                return: moment().add(1, 'days').format('l')
+                            if (vm.carDetails === undefined) {
+                                $state.go('master.cars');
+                            } else {
+                                vm.car = {
+                                    name: vm.carDetails.name,
+                                    price: vm.carDetails.price,
+                                    thumbnail: vm.carDetails.thumbnail,
+                                    pickup: moment().format('l'),
+                                    return: moment().add(1, 'days').format('l')
+                                }
+                                // avoid slider problem on load
+                                vm.sliderLoaded = true;
                             }
-                            // avoid slider problem on load
-                            vm.sliderLoaded = true;
                         });
                     }
 

@@ -1,1 +1,0 @@
-angular.module('carRent', ['ui.router', 'ngMaterial', 'ngMessages']);

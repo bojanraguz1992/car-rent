@@ -5,52 +5,153 @@
     <base href="/">
     <meta charset="utf-8" />
     <title>
-        Car rent
+        Safe ID
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.5/angular-material.css" rel="stylesheet" type="text/css"
-    />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700|Raleway" rel="stylesheet">
-    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
-    <link href="/app/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.1/css/foundation.css">
+    <link rel="stylesheet" href="/Users/bojanraguz/Desktop/Projects/safeid/app/style.css">
 </head>
 
-<body ng-app="carRent">
+<body>
 
-    <!-- bower:js -->
-    <script src="/bower_components/angular/angular.js"></script>
-    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-    <script src="/bower_components/moment/moment.js"></script>
-    <script src="/bower_components/angular-messages/angular-messages.js"></script>
-    <script src="/bower_components/angular-animate/angular-animate.js"></script>
-    <script src="/bower_components/angular-aria/angular-aria.js"></script>
-    <script src="/bower_components/angular-material/angular-material.js"></script>
-    <!-- endinject -->
+    <section class="products">
+        <div class="grid-container">
+            <h2 class="font-size-28">
+                Meest verkochte producten
+            </h2>
+            <div class="grid-x">
+                <div class="cell small-12 medium-3 large-3">
+                    <div class="cell">
+                        <div class="card">
+                            <div class="card-section">
+                                <div class="product-price">
+                                    <h4>This is a card.</h4>
+                                    <p>It has an easy to override visual style, and is appropriately subdued.</p>
+                                </div>
+                                <button class="button btn border-radius-5">
+                                    <a href="#">Meer informatie</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="grid-container">
+            <div class="grid-x">
+                <div class="cell small-12 medium-4 large-4">
+                    <div class="footer-section color-white">
+                        <h3 class="section-headline font-weight-bold font-size-17">
+                            SAFE-ID
+                        </h3>
+                        <ul class="section-list">
+                            <li class="list-item">
+                                <a href="#">Contact</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#">Klantenservice</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#">Verkooppunten</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#">Dealer worden?</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cell small-12 medium-4 large-4">
+                    <div class="footer-section color-white">
+                        <h3 class="section-headline font-weight-bold font-size-17">
+                            NUTTIGE LINKS
+                        </h3>
+                        <ul class="section-list">
+                            <li class="list-item">
+                                <a href="#">QR Code Reader (iOS)</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#">QR Code Reader (Android)</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#">QR Code Reader (Windows Mobile)</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#">KNAU Hardloopkalender</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#">KNAU Fietskalender</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cell small-12 medium-4 large-4">
+                    <div class="footer-section color-white">
+                        <h3 class="section-headline font-weight-bold font-size-17">
+                            VOLG SAFE-ID
+                        </h3>
+                        <ul class="media-list d-flex w-100">
+                            <li class="list-item mr-10">
+                                <a href="#"><i class="fab fa-facebook-square font-size-28"></i></a>
+                            </li>
+                            <li class="list-item mr-10">
+                                <a href="#"><i class="fab fa-twitter-square font-size-28"></i></a>
+                            </li>
+                            <li class="list-item mr-10">
+                                <a href="#"><i class="fab fa-linkedin font-size-28"></i></a>
+                            </li>
+                            <li class="list-item mr-10">
+                                <a href="#"><i class="fab fa-youtube-square font-size-28"></i></a>
+                            </li>
+                        </ul>
+                        <h3 class="section-headline font-weight-bold font-size-17 mt-10">
+                            NIEUWSBRIEF
+                        </h3>
+                        <div class="grid-x">
+                            <div class="medium-4 large-8 cell">
+                                <div class="input-group">
+                                    <input class="input-group-field" type="text" placeholder="Vul hier je emailadres in">
+                                    <div class="input-group-button">
+                                        <i class="fas fa-arrow-circle-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <div ui-view></div>
+        </div>
+    </footer>
+    <section class="footer-copyright">
+        <div class="grid-container">
+            <div class="grid-x">
+                <div class="cell large-4 small-12 medium-4">
+                    <p>
+                        All rights reserved - 2019
+                    </p>
+                </div>
+                <div class="cell large-4 small-12 medium-4">
+                    <p>
 
-    <!-- inject:js -->
-    <script src="app/angular.module.js"></script>
-    <script src="app/modules/common/constant.js"></script>
-    <script src="app/modules/config/router.js"></script>
-    <script src="app/modules/layout/custom-layout.js"></script>
-    <script src="app/modules/services/getCars.js"></script>
-    <script src="app/modules/components/about/about.js"></script>
-    <script src="app/modules/components/banner/banner.js"></script>
-    <script src="app/modules/components/calendar/calendar.js"></script>
-    <script src="app/modules/components/carDescription/carDescription.js"></script>
-    <script src="app/modules/components/carSearch/carSearch.js"></script>
-    <script src="app/modules/components/cart/cart.js"></script>
-    <script src="app/modules/components/footer/footer.js"></script>
-    <script src="app/modules/components/header/header.js"></script>
-    <script src="app/modules/components/hero/hero.js"></script>
-    <script src="app/modules/components/slider/slider.js"></script>
-    <script src="app/modules/components/video/video.js"></script>
-    <script src="app/modules/pages/carDetails/carDetails.js"></script>
-    <script src="app/modules/pages/checkout/checkout.js"></script>
-    <script src="app/modules/pages/details/details.js"></script>
-    <script src="app/modules/pages/homepage/homepage.js"></script>
-    <!-- endinject -->
+                    </p>
+                </div>
+                <div class="cell large-4 small-12 medium-4">
+                    <div class="copyright-link">
+                        <a href="#" class="color-black mr-10">Algemene voorwaarden </a>
+                        <a href="#" class="color-black"> Privacy policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.1/js/foundation.js"></script>
 </body>
 
 </html>

@@ -1,128 +1,67 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: $fontPrimary;
+.d-flex{
+    display: flex;
 }
-
-a {
-    text-decoration: none;
-    transition: 0.3s;
+.w-100{
+    width: 100%;
 }
-
-.headline {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-size: 48px;
-    color: #111311;
-    letter-spacing: 2px;
-    line-height: 1.25;
-    text-transform: uppercase;
+.btn-primary{
+    background-color: $secondaryColor;
+    color: #fff;
+}
+.btn{
+    border: $secondaryColor;
+    color: $secondaryColor;
+}
+.font-weight-bold{
     font-weight: bold;
-    margin-top: 45px;
-    span {
-        &:after {
-            content: '';
-            display: block;
-            width: 1px;
-            height: 80px;
-            background-color: #E3E3E3;
-            margin: 20px auto 0;
-        }
-    }
 }
-
-.text-center {
-    text-align: center;
-    line-height: 33px;
-    margin-top: 20px;
-    color: #333;
-    font-family: $fontSecondary;
+.font-weight-normal{
+    font-weight: normal;
 }
-
-.btn {
-    border: 0;
-    padding: 20px 30px;
-    cursor: pointer;
-    border-radius: 3px;
-    font-family: $fontPrimary;
-    display: inline-block;
-    outline: none;
-    transition: 0.3s;
-    @include element('primary') {
-        margin-top: 30px;
-        background: #111;
-        display: block;
-        margin: 0 auto;
-        color: #fff;
-    }
-    @include element('secondary') {
-        color: rgb(34, 34, 34);
-        background-color: #ebebeb;
-    }
-    @include element('left') {
-        float: left;
-    }
-    &:hover {
-        color: #fff;
-        background-color: #f333;
-    }
+.font-weight-600{
+    font-weight: 600;
 }
-
-.img {
-    @include element('responsive') {
-        max-width: 100%;
-        height: auto;
-    }
-    @include element('round') {
-        height: 600px;
-        margin-bottom: 100px;
-        border-radius: 4px;
-        box-shadow: 0 30px 85px 10px rgba(0, 0, 0, 0.3);
-        width: 100%;
-        background-position: center;
-    }
+.primary-color{
+    color: $primaryColor;
 }
-
-.link {
-    font-family: $fontSecondary;
-    color: #eee;
-    border-bottom: 2px solid #fff;
-    padding-bottom: 10px;
-    margin-top: 15px;
-    display: inline-block;
-    transition: 0.3s;
+.secondary-color{
+    color: $secondaryColor;
+}
+.color-white{
+    color: $colorWhite;
+}
+.color-black{
+    color: $colorBlack;
+}
+.border-radius-5{
+    border-radius: 5px;
+}
+.font-size-16{
+    font-size: 16px;
+}
+.font-size-17{
+    font-size: 17px;
+}
+.font-size-18{
+    font-size: 18px;
+}
+.font-size-28{
+    font-size: 28px;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.mr-10{
+    margin-right: 10px;
+}
+.mt-10{
+    margin-top: 10px;
+}
+a{
+    color: #fff;
     &:hover{
-        color: #ffc0cb;
-        border-color: #ffc0cb;
-    }
-}
-
-.loader {
-    animation: spin 1s linear infinite;
-    border: 3px solid #ddd;
-    border-top: 3px solid #000;
-    border-radius: 50%;
-    height: 75px;
-    width: 75px;
-    margin: 100px auto 130px;
-    @include element('holder'){
-        min-height: 100vh;
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-        @include modifier('small'){
-            min-height: auto;
-        }
-    }
-}
-
-@keyframes spin {
-    to {
-        border-top-color: #f333;
-        transform: rotate(360deg);
+        color: inherit;
     }
 }

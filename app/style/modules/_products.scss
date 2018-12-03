@@ -1,0 +1,21 @@
+@import "config/variables";
+.products{
+    padding: 60px 0;
+    background-color: #f0f0f2;
+    h2{
+        margin-bottom: 50px;
+    }
+}
+.koppel-safe-id{
+    color: #fff;
+    background-color: $bgColor;
+    padding: 30px 0;
+}
+
+@media only screen and (min-width: 768px){
+    .koppel-safe-id{
+        p{
+            margin-right: 40px;
+        }
+    }
+}

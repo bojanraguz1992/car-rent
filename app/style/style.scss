@@ -1,10 +1,9 @@
 // Mixins
 @import "mixins/bem";
 
-
+// Config
 @import "config/fonts";
 @import "config/variables";
 @import "config/global";
 
-@import "modules/footer";
-@import "modules/products";
+// Modules

@@ -2,74 +2,391 @@
 <html>
 
 <head>
-    <base href="/">
     <meta charset="utf-8" />
     <title>
         Safe ID
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.1/css/foundation.css">
-    <link rel="stylesheet" href="/Users/bojanraguz/Desktop/Projects/safeid/app/style.css">
+    <link rel="stylesheet" href="app/style.css">
 </head>
 
 <body>
 
-    <section class="products">
+    <section class="padding__y--20">
         <div class="grid-container">
-            <h2 class="font-size-28 text-center font-weight-bold">
-                <span class="primary-color">Meest verkochte</span> producten
+            <div class="grid-x justify__between">
+                <div class="cell large-4">
+                    logo
+                </div>
+                <div class="cell-large-8">
+                    <ul class="grid-x">
+                        <li class="margin__x--10">
+                            <a href="#" class="font__family--sans color__black font__size--16 font__weight--600">
+                                Home
+                            </a>
+                        </li>
+                        <li class="margin__x--10">
+                            <a href="#" class="font__family--sans color__black font__size--16 font__weight--600">
+                                Nieuws
+                            </a>
+                        </li>
+                        <li class="margin__x--10">
+                            <a href="#" class="font__family--sans color__black font__size--16 font__weight--600">
+                                Hoe werkt safe-ID
+                            </a>
+                        </li>
+                        <li class="margin__x--10">
+                            <a href="#" class="font__family--sans color__black font__size--16 font__weight--600">
+                                Producten
+                            </a>
+                        </li>
+                        <li class="margin__x--10">
+                            <a href="#" class="font__family--sans color__black font__size--16 font__weight--600">
+                                Activatie
+                            </a>
+                        </li>
+                        <li class="margin__x--10">
+                            <a href="#" class="font__family--sans color__black font__size--16 font__weight--600">
+                                Vragen
+                            </a>
+                        </li>
+                        <li class="margin__x--10">
+                            <a href="#" class="font__family--sans color__black font__size--16 font__weight--600">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="padding__y--75 section__bg--white">
+        <div class="grid-container">
+            <div class="grid-x">
+                <div class="cell small-12 medium-12 large-12">
+                    <h2 class="text font__size--34 font__family--sourcesans font__weight--bold color__black margin__b--10">
+                        Een ongeluk, <br>
+                        het kan iedereen overkomen.
+                    </h2>
+                    <p class="text opacity--71 font__size--17 line__height--94 margin__b--20">
+                        Hoe weten de hulpverleners welke specifieke hulp u nodig heeft, <br>
+                        met wie ze te maken hebben en met wie ze contact op moeten nemen?
+                    </p>
+                    <button class="margin__t--20 margin__r--10 color__white bg__color--secondary padding__xy--15 border--radius5 font__family--sans font__size--16 font__weight--bold ">
+                        <a href="#">
+                            Meer weten over onze oplossing?
+                        </a>
+                    </button>
+                    <button class="margin__t--20 margin__b--20 color__secondary bg__color--white padding__xy--15 border--radius5 font__family--sans border__color--secondary font__size--16 font__weight--bold border__color--secondary border__style--solid border__width--2">
+                        <a href="#" class="color__secondary">
+                            Meer weten over onze oplossing?
+                        </a>
+                    </button>
+                    <p class="text color__secondary font__size--16 font__weight--900">
+                        <span class="fas fa-star-of-life"></span>
+                        MEDISCH ERKEND
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section__bg--black padding__y--20">
+        <div class="grid-container">
+            <ul class="grid-x justify__center">
+                <li class="color__white grid-x">
+                    <span class="color__primary margin__r--15">
+                        <span class="fas fa-check-circle bg__color--white border--radius50"></span>
+                    </span>
+                    <span class="color__white font__size--16 font__weight--bold font__weight--bold">Veilig en voordelig
+                    </span>
+                </li>
+                <li class="color__white grid-x margin__x--35">
+                    <span class="bg__color--primary padding__xy--5 font__size--17 font__weight--600 margin__r--15 w-25 h-25 border--radius50 text-center line__height--15">1</span>
+                    <span class="color__white font__size--16 font__weight--bold font__weight--bold">Nog een voordeel
+                    </span>
+                </li>
+                <li class="color__white grid-x">
+                    <span class="bg__color--primary padding__xy--5 font__size--17 font__weight--600 margin__r--15 w-25 h-25 border--radius50 text-center line__height--15">1</span>
+                    <span class="color__white font__size--16 font__weight--bold font__weight--bold">Extra voordeel nr 3
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="padding__y--75 section__bg--white">
+        <div class="grid-container">
+            <div class="grid-x">
+                <div class="cell small-12 medium-5 large-5">
+                    <h2 class="text font__size--28 font__weight--bold color__black margin__b--10">
+                        Hoe werkt <span class="color__primary">Safe-ID</span>
+                    </h2>
+                    <p class="text opacity--71 font__size--17 line__height--94 margin__b--20">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aenean imperdiet tempus arcu, at
+                        convallis torto volutpat eget. Duis ullamcorper felis sodales.
+                    </p>
+                    <ul>
+                        <li class="color__white margin__b--15 grid-x">
+                            <span class="bg__color--primary padding__xy--5 font__size--17 font__weight--600 margin__r--15 w-25 h-25 border--radius50 text-center line__height--15">1</span>
+                            <span class="color__black font__weight--bold">Koop een tag
+                            </span>
+                        </li>
+                        <li class="color__white margin__b--15 grid-x">
+                            <span class="bg__color--primary padding__xy--5 font__size--17 font__weight--600 margin__r--15 w-25 h-25 border--radius50 text-center line__height--15">1</span>
+                            <span class="color__black font__weight--bold">Koop een tag
+                            </span>
+                        </li>
+                        <li class="color__white margin__b--15 grid-x">
+                            <span class="bg__color--primary padding__xy--5 font__size--17 font__weight--600 margin__r--15 w-25 h-25 border--radius50 text-center line__height--15">1</span>
+                            <span class="color__black font__weight--bold">Koop een tag
+                            </span>
+                        </li>
+                    </ul>
+                    <button class="margin__t--20 color__white bg__color--secondary padding__xy--15 border--radius5 font__family--sans font__weight--bold">
+                        <a href="#">
+                            Meer weten over onze oplossing?
+                        </a>
+
+                    </button>
+                </div>
+                <div class="cell small-12 medium-7 large-7">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="padding__y--75 section__bg--gray">
+        <div class="grid-container large-offset-2">
+            <div class="cell small-12">
+                <h3 class="text color__black font__size--28 margin__b--20 font__family--sourcesans font__weight--bold">
+                    De ervaringen van anderen
+                </h3>
+                <p class="text color__black font__size--17 line__height--94 opacity--97 margin__b--30">
+                    Vestibulum malesuada tellus mauris, sed ornare ex vulputate at nullam.
+                </p>
+            </div>
+            <div class="grid-x">
+                <div class="cell small-12 large-7 medium-12 margin__b--30">
+                    <div class="bg__color--white padding__xy--10 border--radius5">
+                        <div class="grid-x">
+                            <div class="cell medium-2">
+
+                            </div>
+                            <div class="cell medium-10">
+                                <div class="grid-x justify__between">
+                                    <h3 class="text font__weight--bold font__size--16 color__black">
+                                        Wesley Sneijder <span class=" margin__l--10 color__secondary font__weight--bold font__size--14">VOETBALLER</span>
+                                    </h3>
+                                    <ul class="grid-x">
+                                        <li class="margin__x--3">
+                                            <span class="fas fa-star color__yellow font__size--14"></span>
+                                        </li>
+                                        <li class="margin__x--3">
+                                            <span class="fas fa-star color__yellow font__size--14"></span>
+                                        </li>
+                                        <li class="margin__x--3">
+                                            <span class="fas fa-star color__yellow font__size--14"></span>
+                                        </li>
+                                        <li class="margin__x--3">
+                                            <span class="fas fa-star color__yellow font__size--14"></span>
+                                        </li>
+                                        <li class="margin__x--3">
+                                            <span class="fas fa-star color__yellow font__size--14"></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="text font__size--16 line__height--94 opacity--64">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell small-12 large-7 medium-12 margin__b--30">
+                    <div class="bg__color--white padding__xy--10 border--radius5">
+                        <div class="grid-x">
+                            <div class="cell medium-2">
+
+                            </div>
+                            <div class="cell medium-10">
+                                <div class="grid-x justify__between">
+                                    <h3 class="text font__weight--bold font__size--16 color__black">
+                                        Max Verstappen <span class=" margin__l--10 color__secondary font__weight--bold font__size--14">F1 COUREUR</span>
+                                    </h3>
+                                    <ul class="grid-x">
+                                        <li class="margin__x--3">
+                                            <span class="fas fa-star color__yellow font__size--14"></span>
+                                        </li>
+                                        <li class="margin__x--3">
+                                            <span class="fas fa-star color__yellow font__size--14"></span>
+                                        </li>
+                                        <li class="margin__x--3">
+                                            <span class="fas fa-star color__yellow font__size--14"></span>
+                                        </li>
+                                        <li class="margin__x--3">
+                                            <span class="fas fa-star color__yellow font__size--14"></span>
+                                        </li>
+                                        <li class="margin__x--3">
+                                            <span class="fas fa-star color__yellow font__size--14"></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="text font__size--16 line__height--94 opacity--64">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell small-12 large-7 medium-12">
+                    <div class="bg__color--white padding__xy--10 border--radius5">
+                        <div class="grid-x">
+                            <div class="cell medium-2">
+
+                            </div>
+                            <div class="cell medium-10">
+                                <div class="grid-x justify__between">
+                                    <h3 class="text font__weight--bold font__size--16 color__black">
+                                        Daphne Schippers <span class=" margin__l--10 color__secondary font__weight--bold font__size--14">HARDLOPER</span>
+                                    </h3>
+                                    <ul class="grid-x">
+                                        <li class="margin__x--3">
+                                            <span class="fas fa-star color__yellow font__size--14"></span>
+                                        </li>
+                                        <li class="margin__x--3">
+                                            <span class="fas fa-star color__yellow font__size--14"></span>
+                                        </li>
+                                        <li class="margin__x--3">
+                                            <span class="fas fa-star color__yellow font__size--14"></span>
+                                        </li>
+                                        <li class="margin__x--3">
+                                            <span class="fas fa-star color__yellow font__size--14"></span>
+                                        </li>
+                                        <li class="margin__x--3">
+                                            <span class="fas fa-star color__yellow font__size--14"></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="text font__size--16 line__height--94 opacity--64">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section__bg--white padding__y--75">
+        <div class="grid-container">
+            <div class="grid-x">
+                <div class="cell medium-6 large-6">
+
+                </div>
+                <div class="cell medium-6 large-6">
+                    <h3 class="text font__size--28 font__weight--bold margin__b--20 font__family--sourcesans">
+                        De oplossing is een <span class="color__primary">Safe-ID</span> armband
+                    </h3>
+                    <div class="grid-x">
+                        <div class="cell medium-12 large-12">
+                            <p class="text font__size--17 line__height--33 margin__b--30">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean imperdiet tempus arcu,
+                                at
+                                <a href="#" class="text color__secondary text__decoration--underline padding__b-5">convallis</a>
+                                tortor volutpat eget. Duis ullamcorper felis sodales.
+                            </p>
+                            <div class="grid-x">
+                                <div class="cell medium-4">
+                                    <h5 class="text color__gray font__size--13 margin__xy--0">
+                                        VANAF
+                                    </h5>
+                                    <p class="text color__secondary font__size--38">
+                                        € 19,95
+                                    </p>
+                                </div>
+                                <div class="cell medium-4">
+                                    <h5 class="text color__gray font__size--13 margin__xy--0">
+                                        MAAT
+                                    </h5>
+                                </div>
+                                <div class="cell medium-4">
+                                    <h5 class="text color__gray font__size--13 margin__xy--0">
+                                        KLEUR
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="cell medium-12">
+                                <button class="text color__white bg__color--secondary padding__xy--15 border--radius5 margin__t--20">
+                                    <a href="#" class="text">
+                                        Bestel de Safe-ID armband nu meteen
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section__bg--gray padding__y--60">
+        <div class="grid-container">
+            <h2 class="text font__size--28 text-center font__weight--bold margin__b--50 font__family--sourcesans">
+                <span class="color__primary">Meest verkochte</span> producten
             </h2>
             <div class="grid-x grid-margin-x">
-                <div class="cell small-12 medium-6 large-3 justify-between">
-                    <div class="card border-radius-5">
+                <div class="cell small-12 medium-6 large-3 justify__between">
+                    <div class="card border--radius5">
                         <div class="card-section">
-                            <div class="product-price d-flex justify-between">
-                                <h4 class="font-size-19 font-weight-bold">Product 1</h4>
-                                <p class="primary-color">€ 19,95</p>
+                            <div class="product-price display--flex justify__between">
+                                <h4 class="text font__size--19 font__weight--bold margin__b--20">Product 1</h4>
+                                <p class="text color__primary">€ 19,95</p>
                             </div>
-                            <button class="button btn-primary border-radius-5 w-100 font-size-16 font-weight-bold">
-                                <a href="#" class="secondary-color">Meer informatie</a>
+                            <button class="bg__color--white padding__y--10  border--radius5 w-100 font__size--16 font__weight--bold border__width--1 border__style--solid border__color--secondary">
+                                <a href="#" class="text color__secondary">Meer informatie</a>
                             </button>
                         </div>
                     </div>
                 </div>
-                <div class="cell small-12 medium-6 large-3 justify-between">
-                    <div class="card border-radius-5">
+                <div class="cell small-12 medium-6 large-3 justify__between">
+                    <div class="card border--radius5">
                         <div class="card-section">
-                            <div class="product-price d-flex justify-between">
-                                <h4 class="font-size-19 font-weight-bold">Product 1</h4>
-                                <p class="primary-color">€ 19,95</p>
+                            <div class="product-price display--flex justify__between">
+                                <h4 class="text font__size--19 font__weight--bold margin__b--20">Product 1</h4>
+                                <p class="text color__primary">€ 19,95</p>
                             </div>
-                            <button class="button btn-primary border-radius-5 w-100 font-size-16 font-weight-bold">
-                                <a href="#" class="secondary-color">Meer informatie</a>
+                            <button class="bg__color--white padding__y--10 border__width--1 border__style--solid border__color--secondary border--radius5 w-100 font__size--16 font__weight--bold">
+                                <a href="#" class="color__secondary">Meer informatie</a>
                             </button>
                         </div>
                     </div>
                 </div>
-                <div class="cell small-12 medium-6 large-3 justify-between">
-                    <div class="card border-radius-5">
+                <div class="cell small-12 medium-6 large-3 justify__between">
+                    <div class="card border--radius5">
                         <div class="card-section">
-                            <div class="product-price d-flex justify-between">
-                                <h4 class="font-size-19 font-weight-bold">Product 1</h4>
-                                <p class="primary-color">€ 19,95</p>
+                            <div class="product-price display--flex justify__between">
+                                <h4 class="text font__size--19 font__weight--bold margin__b--20">Product 1</h4>
+                                <p class="text color__primary">€ 19,95</p>
                             </div>
-                            <button class="button btn-primary border-radius-5 w-100 font-size-16 font-weight-bold">
-                                <a href="#" class="secondary-color">Meer informatie</a>
+                            <button class="bg__color--white padding__y--10 border__width--1 border__style--solid border__color--secondary border--radius5 w-100 font__size--16 font__weight--bold">
+                                <a href="#" class="color__secondary">Meer informatie</a>
                             </button>
                         </div>
                     </div>
                 </div>
-                <div class="cell small-12 medium-6 large-3 justify-between">
-                    <div class="card border-radius-5">
+                <div class="cell small-12 medium-6 large-3 justify__between">
+                    <div class="card border--radius5">
                         <div class="card-section">
-                            <div class="product-price d-flex justify-between">
-                                <h4 class="font-size-19 font-weight-bold">Product 1</h4>
-                                <p class="primary-color">€ 19,95</p>
+                            <div class="product-price display--flex justify__between">
+                                <h4 class="text font__size--19 font__weight--bold margin__b--20">Product 1</h4>
+                                <p class="text color__primary">€ 19,95</p>
                             </div>
-                            <button class="button btn-primary border-radius-5 w-100 font-size-16 font-weight-bold">
-                                <a href="#" class="secondary-color">Meer informatie</a>
+                            <button class="bg__color--white border__width--1 border__style--solid border__color--secondary padding__y--10 border--radius5 w-100 font__size--16 font__weight--bold">
+                                <a href="#" class="color__secondary">Meer informatie</a>
                             </button>
                         </div>
                     </div>
@@ -78,86 +395,86 @@
 
         </div>
     </section>
-    <section class="koppel-safe-id">
+    <section class="section__bg--black padding__y--30 color__white">
         <div class="grid-container">
-            <div class="grid-x justify-center">
-                <p class="font-size-24">
+            <div class="grid-x justify__center">
+                <p class="text font__size--24 font__family--sourcesans margin__r--40">
                     Wil je je Safe ID-koppelen?
                 </p>
-                <button class="button btn border-radius-5">
+                <button class="bg__color--secondary color__white border--radius5 padding__xy--15">
                     Koppel je Safe-ID nu meteen
                 </button>
             </div>
         </div>
     </section>
-    <footer>
+    <footer class="section__bg--primary padding__y--45">
         <div class="grid-container">
             <div class="grid-x">
                 <div class="cell small-12 medium-4 large-4">
-                    <div class="footer-section color-white">
-                        <h3 class="section-headline font-weight-bold font-size-17">
+                    <div class="footer-section color__white">
+                        <h3 class="text section-headline font__weight--bold font__size--17 margin__b--10">
                             SAFE-ID
                         </h3>
-                        <ul class="section-list">
-                            <li class="list-item">
+                        <ul>
+                            <li class="font__family--sourcesans">
                                 <a href="#">Contact</a>
                             </li>
-                            <li class="list-item">
+                            <li class="font__family--sourcesans">
                                 <a href="#">Klantenservice</a>
                             </li>
-                            <li class="list-item">
+                            <li class="font__family--sourcesans">
                                 <a href="#">Verkooppunten</a>
                             </li>
-                            <li class="list-item">
+                            <li class="font__family--sourcesans">
                                 <a href="#">Dealer worden?</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="cell small-12 medium-4 large-4">
-                    <div class="footer-section color-white">
-                        <h3 class="section-headline font-weight-bold font-size-17">
+                    <div class="footer-section color__white">
+                        <h3 class="text section-headline font__weight--bold font__size--17 margin__b--10">
                             NUTTIGE LINKS
                         </h3>
-                        <ul class="section-list">
-                            <li class="list-item">
+                        <ul>
+                            <li class="font__family--sourcesans">
                                 <a href="#">QR Code Reader (iOS)</a>
                             </li>
-                            <li class="list-item">
+                            <li class="font__family--sourcesans">
                                 <a href="#">QR Code Reader (Android)</a>
                             </li>
-                            <li class="list-item">
+                            <li class="font__family--sourcesans">
                                 <a href="#">QR Code Reader (Windows Mobile)</a>
                             </li>
-                            <li class="list-item">
+                            <li class="font__family--sourcesans">
                                 <a href="#">KNAU Hardloopkalender</a>
                             </li>
-                            <li class="list-item">
+                            <li class="font__family--sourcesans">
                                 <a href="#">KNAU Fietskalender</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="cell small-12 medium-4 large-4">
-                    <div class="footer-section color-white">
-                        <h3 class="section-headline font-weight-bold font-size-17">
+                    <div class="footer-section color__white">
+                        <h3 class="text section-headline font__weight--bold font__size--17 margin__b--10">
                             VOLG SAFE-ID
                         </h3>
-                        <ul class="media-list d-flex w-100">
-                            <li class="list-item mr-10">
-                                <a href="#"><i class="fab fa-facebook-square font-size-28"></i></a>
+                        <ul class="media-list display--flex w-100">
+                            <li class="font__family--sourcesans margin__r--10">
+                                <a href="#"><i class="fab fa-facebook-square font__size--28"></i></a>
                             </li>
-                            <li class="list-item mr-10">
-                                <a href="#"><i class="fab fa-twitter-square font-size-28"></i></a>
+                            <li class="font__family--sourcesans margin__r--10">
+                                <a href="#"><i class="fab fa-twitter-square font__size--28"></i></a>
                             </li>
-                            <li class="list-item mr-10">
-                                <a href="#"><i class="fab fa-linkedin font-size-28"></i></a>
+                            <li class="font__family--sourcesans margin__r--10">
+                                <a href="#"><i class="fab fa-linkedin font__size--28"></i></a>
                             </li>
-                            <li class="list-item mr-10">
-                                <a href="#"><i class="fab fa-youtube-square font-size-28"></i></a>
+                            <li class="font__family--sourcesans margin__r--10">
+                                <a href="#"><i class="fab fa-youtube-square font__size--28"></i></a>
                             </li>
                         </ul>
-                        <h3 class="section-headline font-weight-bold font-size-17 mt-10">
+                        <h3 class="section-headline font__weight--bold font__size--17 margin__t--10">
                             NIEUWSBRIEF
                         </h3>
                         <div class="grid-x">
@@ -173,26 +490,25 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </footer>
-    <section class="footer-copyright">
+    <section class="footer-copyright padding__y--30">
         <div class="grid-container">
             <div class="grid-x">
                 <div class="cell large-4 small-12 medium-4">
-                    <p>
+                    <p class="text">
                         All rights reserved - 2019
                     </p>
                 </div>
                 <div class="cell large-4 small-12 medium-4">
-                    <p>
-
+                    <p class="text">
+                        logo
                     </p>
                 </div>
                 <div class="cell large-4 small-12 medium-4">
                     <div class="copyright-link">
-                        <a href="#" class="color-black mr-10">Algemene voorwaarden </a>
-                        <a href="#" class="color-black"> Privacy policy</a>
+                        <a href="#" class="color__black margin__r--10">Algemene voorwaarden </a>
+                        <a href="#" class="color__black"> Privacy policy</a>
                     </div>
                 </div>
             </div>

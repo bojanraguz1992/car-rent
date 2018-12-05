@@ -73,18 +73,24 @@ h6 {
     font-family: $fontPrimary;
 }
 
-
-
-.w-100 {
-    width: 100%;
+.width{
+    &--25{
+        width: 25px;
+    }
+    &--28{
+        width: 28px;
+    }
+    &--100{
+        width: 100%;
+    }
 }
-
-.w-25 {
-    width: 25px;
-}
-
-.h-25 {
-    height: 25px;
+.height{
+    &--25{
+        height: 25px;
+    }
+    &--28{
+        height: 28px;
+    }
 }
 
 .bg__color {

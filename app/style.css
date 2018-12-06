@@ -12,6 +12,9 @@ button {
 .opacity--64 {
   opacity: 0.64; }
 
+.opacity--70 {
+  opacity: 0.7; }
+
 .opacity--71 {
   opacity: 0.71; }
 
@@ -151,6 +154,12 @@ h6 {
 .font__size--28 {
   font-size: 28px; }
 
+.font__size--30 {
+  font-size: 30px; }
+
+.font__size--37 {
+  font-size: 37px; }
+
 .font__size--38 {
   font-size: 38px; }
 
@@ -187,26 +196,30 @@ h6 {
 .text__decoration--underline {
   text-decoration: underline; }
 
-.section__bg--primary {
+.section__bgColor--primary {
   background-color: #4dba43; }
 
-.section__bg--secondary {
+.section__bgColor--secondary {
   background-color: #4352ba; }
 
-.section__bg--black {
+.section__bgColor--black {
   background-color: #02072b; }
 
-.section__bg--gray {
+.section__bgColor--gray {
   background-color: #f0f0f2; }
 
-.section__bg--white {
+.section__bgColor--white {
   background-color: #ffffff; }
+
+.section__bgImage--run {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(2, 7, 43, 0.45)), to(rgba(2, 7, 43, 0.45))), url("images/bg-run.jpg") no-repeat center bottom;
+  background: linear-gradient(rgba(2, 7, 43, 0.45), rgba(2, 7, 43, 0.45)), url("images/bg-run.jpg") no-repeat center bottom; }
+
+.section__bgSize--cover {
+  background-size: cover; }
 
 .padding__xy--5 {
   padding: 5px; }
-
-.padding__xy--8-16 {
-  padding: 8px 16px; }
 
 .padding__xy--10 {
   padding: 10px; }
@@ -216,6 +229,12 @@ h6 {
 
 .padding__xy--30 {
   padding: 30px; }
+
+.padding__xy--8-16 {
+  padding: 8px 16px; }
+
+.padding__xy--95-70 {
+  padding: 95px 70px; }
 
 .padding__l--10 {
   padding-left: 10px; }
@@ -250,6 +269,9 @@ h6 {
 .padding__t--60 {
   padding-top: 60px; }
 
+.padding__t--75 {
+  padding-top: 75px; }
+
 .padding__x--50 {
   padding: 0 50px; }
 
@@ -274,8 +296,17 @@ h6 {
 .padding__y--60 {
   padding: 60px 0; }
 
+.padding__y--70 {
+  padding: 70px 0; }
+
 .padding__y--75 {
   padding: 75px 0; }
+
+.padding__y--95 {
+  padding: 95px 0; }
+
+.padding__y--100 {
+  padding: 100px 0; }
 
 .margin__xy--0 {
   margin: 0; }
@@ -294,6 +325,9 @@ h6 {
 
 .margin__r--20 {
   margin-right: 20px; }
+
+.margin__r--35 {
+  margin-right: 35px; }
 
 .margin__r--40 {
   margin-right: 40px; }
@@ -336,6 +370,9 @@ h6 {
 
 .margin__x--10 {
   margin: 0 10px; }
+
+.margin__x--15 {
+  margin: 0 15px; }
 
 .margin__x--35 {
   margin: 0 35px; }

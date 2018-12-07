@@ -7,57 +7,71 @@
         Safe ID
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600,800" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.1/css/foundation.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.1/dist/css/foundation.min.css"
+        integrity="sha256-1mcRjtAxlSjp6XJBgrBeeCORfBp/ppyX4tsvpQVCcpA= sha384-b5S5X654rX3Wo6z5/hnQ4GBmKuIJKMPwrJXn52ypjztlnDK2w9+9hSMBz/asy9Gw sha512-M1VveR2JGzpgWHb0elGqPTltHK3xbvu3Brgjfg4cg5ZNtyyApxw/45yHYsZ/rCVbfoO5MSZxB241wWq642jLtA=="
+        crossorigin="anonymous">
+
     <link rel="stylesheet" href="app/style.css">
 </head>
 
 <body>
 
-    <section class="padding__y--20">
+
+    <header>
         <div class="grid-container">
-            <div class="grid-x justify__between">
-                <div class="cell large-4">
-                    logo
+            <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+                <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+                <div class="title-bar-title"> <img class="copyright__image" src="https://www.safe-id.nl/wp-content/themes/onebite-html5/img/logo-safeid.png"
+                    alt="Safe id" /></div>
+            </div>
+
+            <div class="top-bar" id="example-menu">
+                <div class="top-bar-left">
+                    <ul class="dropdown menu" data-dropdown-menu>
+                        <li class=""> <img class="copyright__image" src="https://www.safe-id.nl/wp-content/themes/onebite-html5/img/logo-safeid.png"
+                                alt="Safe id" /></li>
+                    </ul>
                 </div>
-                <div class="cell-large-8">
-                    <ul class="grid-x">
-                        <li class="margin__x--10">
-                            <a href="#" class="font__family--sans color__black font__size--16 font__weight--600">
+                <div class="top-bar-right">
+                    <ul class="menu">
+                        <li>
+                            <a href="#" class="text list__text">
                                 Home
                             </a>
                         </li>
-                        <li class="margin__x--10">
-                            <a href="#" class="font__family--sans color__black font__size--16 font__weight--600">
+                        <li>
+                            <a href="#" class="text list__text">
                                 Nieuws
                             </a>
                         </li>
-                        <li class="margin__x--10">
-                            <a href="#" class="font__family--sans color__black font__size--16 font__weight--600">
+                        <li>
+                            <a href="#" class="text list__text">
                                 Hoe werkt safe-ID
                             </a>
                         </li>
-                        <li class="margin__x--10">
-                            <a href="#" class="font__family--sans color__black font__size--16 font__weight--600">
+                        <li>
+                            <a href="#" class="text list__text">
                                 Producten
                             </a>
                         </li>
-                        <li class="margin__x--10">
-                            <a href="#" class="font__family--sans color__black font__size--16 font__weight--600">
+                        <li>
+                            <a href="#" class="text list__text">
                                 Activatie
                             </a>
                         </li>
-                        <li class="margin__x--10">
-                            <a href="#" class="font__family--sans color__black font__size--16 font__weight--600">
+                        <li>
+                            <a href="#" class="text list__text">
                                 Vragen
                             </a>
                         </li>
-                        <li class="margin__x--10">
-                            <a href="#" class="font__family--sans color__black font__size--16 font__weight--600">
+                        <li>
+                            <a href="#" class="text list__text">
                                 Contact
                             </a>
                         </li>
@@ -65,496 +79,434 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="padding__y--75">
+    </header>
+    <section class="banner">
+        <div class="banner__image" style="background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/BkhOrZHFirkz60ou/cell-phone-in-hand-internet-browsing_rgoj0r3dg_thumbnail-full01.png)"></div>
         <div class="grid-container">
             <div class="grid-x">
-                <div class="cell small-12 medium-12 large-12">
-                    <h2 class="text font__size--34 font__family--sourcesans font__weight--bold color__black margin__b--10">
+                <div class="cell small-12">
+                    <h2 class="text banner__title">
                         Een ongeluk, <br>
                         het kan iedereen overkomen.
                     </h2>
-                    <p class="text opacity--71 font__size--17 line__height--94 margin__b--20">
+                    <p class="text banner__text">
                         Hoe weten de hulpverleners welke specifieke hulp u nodig heeft, <br>
                         met wie ze te maken hebben en met wie ze contact op moeten nemen?
                     </p>
-                    <button class="margin__t--20 margin__r--10 color__white bg__color--secondary padding__xy--15 border--radius5 font__family--sans font__size--16 font__weight--bold ">
-                        <a href="#">
-                            Meer weten over onze oplossing?
-                        </a>
-                    </button>
-                    <button class="margin__t--20 margin__b--20 color__secondary bg__color--white padding__xy--15 border--radius5 font__family--sans border__color--secondary font__size--16 font__weight--bold border__color--secondary border__style--solid border__width--2">
-                        <a href="#" class="color__secondary">
-                            Koppel je Safe-ID nu meteen
-                        </a>
-                    </button>
-                    <p class="text color__secondary font__size--16 font__weight--900">
-                        <span class="fas fa-star-of-life"></span>
-                        MEDISCH ERKEND
+                    <div class="grid-x">
+                        <button class="btn btn__blue">
+                            <span class="btn__text">Meer weten over onze oplossing? </span>
+                            <i class="fas fa-arrow-circle-right btn__icon"></i>
+                        </button>
+                        <button class="btn btn__outline m__l--15">
+                            <span class="btn__text text__blue"> Koppel je Safe-ID nu meteen
+                                <i class="fas fa-arrow-circle-right btn__icon"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <p class="text text__blue text__ebold">
+                        * MEDISCH ERKEND
                     </p>
-                    <ul class="grid-x margin__t--20">
-                        <li class="margin__r--15">
-                            <i class="fab fa-cc-visa font__size--30"></i>
-                        </li>
-                        <li class="margin__x--15">
-                            <i class="fab fa-cc-visa font__size--30"></i>
-                        </li>
-                        <li class="margin__x--15">
-                            <i class="fab fa-cc-visa font__size--30"></i>
-                        </li>
-                        <li class="margin__x--15">
-                            <i class="fab fa-cc-visa font__size--30"></i>
-                        </li>
-                        <li class="margin__x--15">
-                            <i class="fab fa-cc-visa font__size--30"></i>
-                        </li>
-                        <li class="margin__x--15">
-                            <i class="fab fa-cc-visa font__size--30"></i>
-                        </li>
-                    </ul>
+
+                    <div class="banner__card">
+                        <i class="fab fa-cc-visa banner__card--icon"></i> <i class="fab fa-cc-visa banner__card--icon"></i>
+                        <i class="fab fa-cc-visa banner__card--icon"></i> <i class="fab fa-cc-visa banner__card--icon"></i>
+                        <i class="fab fa-cc-visa banner__card--icon"></i> <i class="fab fa-cc-visa banner__card--icon"></i>
+
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section__bgColor--black padding__y--15">
+
+    <section class="section__dark section__checkbox">
         <div class="grid-container">
-            <ul class="grid-x justify__center">
-                <li class="color__white grid-x">
-                    <span class="color__primary margin__r--15">
-                        <span class="fas fa-check-circle bg__color--white border--radius50"></span>
-                    </span>
-                    <span class="color__white font__size--16 font__weight--bold font__weight--bold">Veilig en voordelig
-                    </span>
+            <ul class="grid-x list__unstyled">
+                <li class="">
+                    <span class="fas fa-check-circle text__green"></span>
+                    <span class="text text__secondary text__white text__bold m__x--15">Veilig en voordelig</span>
                 </li>
-                <li class="color__white grid-x margin__x--35">
-                    <span class="color__primary margin__r--15">
-                        <span class="fas fa-check-circle bg__color--white border--radius50"></span>
-                    </span>
-                    <span class="color__white font__size--16 font__weight--bold font__weight--bold">Nog een voordeel
-                    </span>
+                <li class="">
+                    <span class="fas fa-check-circle text__green"></span>
+                    <span class="text text__secondary text__white text__bold m__x--15">Nog een voordeel</span>
                 </li>
-                <li class="color__white grid-x">
-                    <span class="color__primary margin__r--15">
-                        <span class="fas fa-check-circle bg__color--white border--radius50"></span>
-                    </span>
-                    <span class="color__white font__size--16 font__weight--bold font__weight--bold">Extra voordeel nr 3
-                    </span>
+                <li class="">
+                    <span class="fas fa-check-circle text__green"></span>
+                    <span class="text text__secondary text__white text__bold m__x--15">Extra voordeel nr 3</span>
                 </li>
             </ul>
         </div>
     </section>
-    <section class="padding__y--75 section__bgColor--white">
-        <div class="grid-container">
-            <div class="grid-x">
-                <div class="cell small-12 medium-6 large-6">
-                    <h2 class="text font__size--28 font__weight--bold color__black margin__b--10">
-                        Hoe werkt <span class="color__primary">Safe-ID</span>
-                    </h2>
-                    <p class="text opacity--71 font__size--17 line__height--94 margin__b--20">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Aenean imperdiet tempus arcu, at
-                        convallis torto volutpat <br> eget. Duis ullamcorper felis sodales.
-                    </p>
-                    <ul>
-                        <li class="color__white margin__b--15 grid-x">
-                            <span class="bg__color--primary padding__xy--5 font__size--17 font__weight--600 margin__r--15 width--28 height--28 border--radius50 text-center line__height--15">1</span>
-                            <span class="color__black font__weight--bold">Koop een tag
-                            </span>
-                        </li>
-                        <li class="color__white margin__b--15 grid-x">
-                            <span class="bg__color--primary padding__xy--5 font__size--17 font__weight--600 margin__r--15 width--28 height--28 border--radius50 text-center line__height--15">2</span>
-                            <span class="color__black font__weight--bold">Ontvang en activeer
-                            </span>
-                        </li>
-                        <li class="color__white margin__b--15 grid-x">
-                            <span class="bg__color--primary padding__xy--5 font__size--17 font__weight--600 margin__r--15 width--28 height--28 border--radius50 text-center line__height--15">3</span>
-                            <span class="color__black font__weight--bold">Vul jouw medisch profiel
-                            </span>
-                        </li>
-                    </ul>
-                    <button class="margin__t--20 color__white bg__color--secondary padding__xy--15 border--radius5 font__family--sans font__weight--bold">
-                        <a href="#">
-                            Meer weten over onze oplossing?
-                        </a>
 
+    <section class="section__info">
+        <div class="grid-container">
+            <div class="grid-x grid-margin-x">
+                <div class="cell small-12 medium-6 large-6">
+                    <h2 class="text text__main text__black">Hoe werkt <span class="text__green">Safe-ID</span> </h2>
+                    <p class="text text__light">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean imperdiet tempus arcu, at
+                        convallis tortor volutpat eget. Duis ullamcorper felis sodales.
+                    </p>
+                    <div class="list">
+                        <div class="list__number">1</div>
+                        <div class="text list__text">Koop een tag</div>
+                    </div>
+                    <div class="list">
+                        <div class="list__number">2</div>
+                        <div class="text list__text">Ontvang en activeer</div>
+                    </div>
+                    <div class="list">
+                        <div class="list__number">3</div>
+                        <div class="text list__text">Vul jouw medisch profiel</div>
+                    </div>
+                    <button class="btn btn__blue">
+                        <span class="btn__text">Meer weten over onze oplossing? </span>
+                        <i class="fas fa-arrow-circle-right btn__icon"></i>
                     </button>
                 </div>
-                <div class="cell small-12 medium-6 large-6">
-                   
+                <div class="cell small-12 medium-6 large-6 cell__right--abs">
+                    <div class="section__info--image" style="background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/BkhOrZHFirkz60ou/cell-phone-in-hand-internet-browsing_rgoj0r3dg_thumbnail-full01.png)"></div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="padding__xy--95-70 section__bgImage--run section__bgSize--cover ">
-        <div class="grid-container large-offset-2">
-            <div class="cell small-12">
-                <h3 class="text color__white font__size--28 margin__b--20 font__family--sourcesans font__weight--bold">
-                    De ervaringen van anderen
-                </h3>
-                <p class="text color__white font__size--17 line__height--94 opacity--97 margin__b--30">
-                    Vestibulum malesuada tellus mauris, sed ornare ex vulputate at nullam.
-                </p>
-            </div>
-            <div class="grid-x">
-                <div class="cell small-12 large-6 medium-12 margin__b--30">
-                    <div class="bg__color--white padding__xy--10 border--radius5">
-                        <div class="grid-x">
-                            <div class="cell medium-2">
+
+    <section class="section__review">
+        <div class="section__review--overlay">
+            <div class="grid-container ">
+                <div class="large-10 large-offset-1 column">
+                    <div class="cell small-12">
+                        <h3 class="text section__review--title">
+                            De ervaringen van anderen
+                        </h3>
+                        <p class="text section__review--subtitle">
+                            Vestibulum malesuada tellus mauris, sed ornare ex vulputate at nullam.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRcPGQ4MGB0VFhgWKx0ZFxcXFhcYHTQsJCYxJx8VITEhJS0yLi4uFx8zODMsNygtOisBCgoKDg0OFhAPFysdHR0tNSsrKzgtLSsyLS0rKystLS03LS0rKystLS0rKy0rKzctNy03LS0rLSsrLS0rKy0rLf/AABEIADgAPgMBEQACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAADBQQGAAIHAf/EADEQAAEDAgYBAwEGBwAAAAAAAAECAwQAEQUGEiExQVETYXGBIiMyQsHSFBVDUnKhsf/EABkBAAIDAQAAAAAAAAAAAAAAAAACAQMEBf/EACIRAAICAQQCAwEAAAAAAAAAAAABAhEDBBITMSFBMlHwIv/aAAwDAQACEQMRAD8A7CBVfYwYAc9VNUFWJcWzAiL9iGlLq7E6v2juqJZvoeONiA5vfWqPeS0gLvYhBspX9qvHxWeWafot40Mms0raKC+hp1vkls2UB0oDsXp4Z2vkJLGWONJjzWvViuJWnjbkHmx8VsjKMuilpoxYqGSCI3oQB0ChdhITZqxAxYwipTdTySSfCb/rVOpybUPjVlLRguIyCHo7vpg73d5+grMom1Y2Y7lbEJK1+o60m++oX3PSreasUWDgiTHy5Liti8hDhSSdNrf5AH3pZQfsnjIuBYpLwfMDSJAV6Tqw0R+EWva5+KIS29GXKkjqDoraygB3QgDotUraQ0yo54K28Tw5VrtOIUg/Nwf1rPnimXYCU0qwBIV8CkTR0Z2FDqOL/TuhtENMxYURcBVqGEaTKnmXUuW0i24cTY/Uc1WzPmVSOmL4Hmt9UzCl7AHmoasHECI7nS6p4pIseRMS5sjKMSMtZupEhJAPNuDSziyzD5KzjicfkOFEaU7Fj67fdJuSnvelSRqlusNDwiWrA3mZD7pk3BCzz8c0NIepAcGwvGI0gkz3y2d/TeFwD7KBoYqVsZYvHK5DC3dWhA1EoBJuFDYAVWweLcy5xJjc2I1JZVqbdGoH2rbGW5HPnDjltPTzUt0LW5gm3l99UyIT/pivMkYyXocpCNRaJTc/l3BJF+7CqM8bNmkkkmLDOdssNt6ldeKoZsRBOMz23VRkQUrO1llRAV5JsNqaJDY1bW+hBC/td37HsfilYVZio6p1kAK1AhYKRcgg7HamirIeRQ7LDDjiLEbYH5R15vc1phHajmZpck9xuTvUtWIvDZDhSErcWlewPmpBMmR0BZWhYSpJ6O4ppRtEJtFPbdSmW9CWNLjZKf8AdYGdSErIf8gZbWsFEiT6iyrW6Ukj2ufFNEtqxm1HbwuAGWVLKUj+qoqVz5NLIi6Y0ysou/xDx42T/wBNXYlZi1bHK6vu2ZV4QEneoboDQlhY20gg6eRsrx80wMp+eM9uZUWYkCEiXMDYdPqkhIB4FhuTTCsRxMSfzZhbGYWGxEmOFV0NklOxKe/NqwZvmdLErgR3cw4+ysIXGufNtjUR6HuUWMIbWL4sEOzfu2fANiaj2Kk3ZIxHOQyji+HQ3IyXIUttRUU/jRYgXT0eeK0afoo1iSr99HQUPNyGG3460radQFhQ4KSLg1azMad0ID//2Q=="
+                                alt="" />
+                        </div>
+                        <div class="card__details">
+                            <div class="card__description">
+                                <div class="card__description--data">
+                                    <div class="card__description--name">Wesley Sneijder</div>
+                                    <div class="card__description--subtitle">Voetballer</div>
+                                </div>
+                                <div class="card__description--rating">
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+
+                                </div>
 
                             </div>
-                            <div class="cell medium-10">
-                                <div class="grid-x justify__between">
-                                    <h3 class="text font__weight--bold font__size--16 color__black">
-                                        Wesley Sneijder <span class=" margin__l--10 color__secondary font__weight--bold font__size--14">VOETBALLER</span>
-                                    </h3>
-                                    <ul class="grid-x">
-                                        <li class="margin__x--3">
-                                            <span class="fas fa-star color__yellow font__size--14"></span>
-                                        </li>
-                                        <li class="margin__x--3">
-                                            <span class="fas fa-star color__yellow font__size--14"></span>
-                                        </li>
-                                        <li class="margin__x--3">
-                                            <span class="fas fa-star color__yellow font__size--14"></span>
-                                        </li>
-                                        <li class="margin__x--3">
-                                            <span class="fas fa-star color__yellow font__size--14"></span>
-                                        </li>
-                                        <li class="margin__x--3">
-                                            <span class="fas fa-star color__yellow font__size--14"></span>
-                                        </li>
-                                    </ul>
+                            <div class="card__footer">
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit… </p>
+                                <i class="fas fa-arrow-circle-right text__green"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRcPGQ4MGB0VFhgWKx0ZFxcXFhcYHTQsJCYxJx8VITEhJS0yLi4uFx8zODMsNygtOisBCgoKDg0OFhAPFysdHR0tNSsrKzgtLSsyLS0rKystLS03LS0rKystLS0rKy0rKzctNy03LS0rLSsrLS0rKy0rLf/AABEIADgAPgMBEQACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAADBQQGAAIHAf/EADEQAAEDAgYBAwEGBwAAAAAAAAECAwQAEQUGEiExQVETYXGBIiMyQsHSFBVDUnKhsf/EABkBAAIDAQAAAAAAAAAAAAAAAAACAQMEBf/EACIRAAICAQQCAwEAAAAAAAAAAAABAhEDBBITMSFBMlHwIv/aAAwDAQACEQMRAD8A7CBVfYwYAc9VNUFWJcWzAiL9iGlLq7E6v2juqJZvoeONiA5vfWqPeS0gLvYhBspX9qvHxWeWafot40Mms0raKC+hp1vkls2UB0oDsXp4Z2vkJLGWONJjzWvViuJWnjbkHmx8VsjKMuilpoxYqGSCI3oQB0ChdhITZqxAxYwipTdTySSfCb/rVOpybUPjVlLRguIyCHo7vpg73d5+grMom1Y2Y7lbEJK1+o60m++oX3PSreasUWDgiTHy5Liti8hDhSSdNrf5AH3pZQfsnjIuBYpLwfMDSJAV6Tqw0R+EWva5+KIS29GXKkjqDoraygB3QgDotUraQ0yo54K28Tw5VrtOIUg/Nwf1rPnimXYCU0qwBIV8CkTR0Z2FDqOL/TuhtENMxYURcBVqGEaTKnmXUuW0i24cTY/Uc1WzPmVSOmL4Hmt9UzCl7AHmoasHECI7nS6p4pIseRMS5sjKMSMtZupEhJAPNuDSziyzD5KzjicfkOFEaU7Fj67fdJuSnvelSRqlusNDwiWrA3mZD7pk3BCzz8c0NIepAcGwvGI0gkz3y2d/TeFwD7KBoYqVsZYvHK5DC3dWhA1EoBJuFDYAVWweLcy5xJjc2I1JZVqbdGoH2rbGW5HPnDjltPTzUt0LW5gm3l99UyIT/pivMkYyXocpCNRaJTc/l3BJF+7CqM8bNmkkkmLDOdssNt6ldeKoZsRBOMz23VRkQUrO1llRAV5JsNqaJDY1bW+hBC/td37HsfilYVZio6p1kAK1AhYKRcgg7HamirIeRQ7LDDjiLEbYH5R15vc1phHajmZpck9xuTvUtWIvDZDhSErcWlewPmpBMmR0BZWhYSpJ6O4ppRtEJtFPbdSmW9CWNLjZKf8AdYGdSErIf8gZbWsFEiT6iyrW6Ukj2ufFNEtqxm1HbwuAGWVLKUj+qoqVz5NLIi6Y0ysou/xDx42T/wBNXYlZi1bHK6vu2ZV4QEneoboDQlhY20gg6eRsrx80wMp+eM9uZUWYkCEiXMDYdPqkhIB4FhuTTCsRxMSfzZhbGYWGxEmOFV0NklOxKe/NqwZvmdLErgR3cw4+ysIXGufNtjUR6HuUWMIbWL4sEOzfu2fANiaj2Kk3ZIxHOQyji+HQ3IyXIUttRUU/jRYgXT0eeK0afoo1iSr99HQUPNyGG3460radQFhQ4KSLg1azMad0ID//2Q=="
+                                alt="" />
+                        </div>
+                        <div class="card__details">
+                            <div class="card__description">
+                                <div class="card__description--data">
+                                    <div class="card__description--name">Wesley Sneijder</div>
+                                    <div class="card__description--subtitle">Voetballer</div>
                                 </div>
-                                <p class="text font__size--16 line__height--94 opacity--64">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit...
-                                </p>
+                                <div class="card__description--rating">
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+
+                                </div>
+
+                            </div>
+                            <div class="card__footer">
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit… </p>
+                                <i class="fas fa-arrow-circle-right text__green"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRcPGQ4MGB0VFhgWKx0ZFxcXFhcYHTQsJCYxJx8VITEhJS0yLi4uFx8zODMsNygtOisBCgoKDg0OFhAPFysdHR0tNSsrKzgtLSsyLS0rKystLS03LS0rKystLS0rKy0rKzctNy03LS0rLSsrLS0rKy0rLf/AABEIADgAPgMBEQACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAADBQQGAAIHAf/EADEQAAEDAgYBAwEGBwAAAAAAAAECAwQAEQUGEiExQVETYXGBIiMyQsHSFBVDUnKhsf/EABkBAAIDAQAAAAAAAAAAAAAAAAACAQMEBf/EACIRAAICAQQCAwEAAAAAAAAAAAABAhEDBBITMSFBMlHwIv/aAAwDAQACEQMRAD8A7CBVfYwYAc9VNUFWJcWzAiL9iGlLq7E6v2juqJZvoeONiA5vfWqPeS0gLvYhBspX9qvHxWeWafot40Mms0raKC+hp1vkls2UB0oDsXp4Z2vkJLGWONJjzWvViuJWnjbkHmx8VsjKMuilpoxYqGSCI3oQB0ChdhITZqxAxYwipTdTySSfCb/rVOpybUPjVlLRguIyCHo7vpg73d5+grMom1Y2Y7lbEJK1+o60m++oX3PSreasUWDgiTHy5Liti8hDhSSdNrf5AH3pZQfsnjIuBYpLwfMDSJAV6Tqw0R+EWva5+KIS29GXKkjqDoraygB3QgDotUraQ0yo54K28Tw5VrtOIUg/Nwf1rPnimXYCU0qwBIV8CkTR0Z2FDqOL/TuhtENMxYURcBVqGEaTKnmXUuW0i24cTY/Uc1WzPmVSOmL4Hmt9UzCl7AHmoasHECI7nS6p4pIseRMS5sjKMSMtZupEhJAPNuDSziyzD5KzjicfkOFEaU7Fj67fdJuSnvelSRqlusNDwiWrA3mZD7pk3BCzz8c0NIepAcGwvGI0gkz3y2d/TeFwD7KBoYqVsZYvHK5DC3dWhA1EoBJuFDYAVWweLcy5xJjc2I1JZVqbdGoH2rbGW5HPnDjltPTzUt0LW5gm3l99UyIT/pivMkYyXocpCNRaJTc/l3BJF+7CqM8bNmkkkmLDOdssNt6ldeKoZsRBOMz23VRkQUrO1llRAV5JsNqaJDY1bW+hBC/td37HsfilYVZio6p1kAK1AhYKRcgg7HamirIeRQ7LDDjiLEbYH5R15vc1phHajmZpck9xuTvUtWIvDZDhSErcWlewPmpBMmR0BZWhYSpJ6O4ppRtEJtFPbdSmW9CWNLjZKf8AdYGdSErIf8gZbWsFEiT6iyrW6Ukj2ufFNEtqxm1HbwuAGWVLKUj+qoqVz5NLIi6Y0ysou/xDx42T/wBNXYlZi1bHK6vu2ZV4QEneoboDQlhY20gg6eRsrx80wMp+eM9uZUWYkCEiXMDYdPqkhIB4FhuTTCsRxMSfzZhbGYWGxEmOFV0NklOxKe/NqwZvmdLErgR3cw4+ysIXGufNtjUR6HuUWMIbWL4sEOzfu2fANiaj2Kk3ZIxHOQyji+HQ3IyXIUttRUU/jRYgXT0eeK0afoo1iSr99HQUPNyGG3460radQFhQ4KSLg1azMad0ID//2Q=="
+                                alt="" />
+                        </div>
+                        <div class="card__details">
+                            <div class="card__description">
+                                <div class="card__description--data">
+                                    <div class="card__description--name">Wesley Sneijder</div>
+                                    <div class="card__description--subtitle">Voetballer</div>
+                                </div>
+                                <div class="card__description--rating">
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+                                    <span class="fas fa-star"></span>
+
+                                </div>
+
+                            </div>
+                            <div class="card__footer">
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit… </p>
+                                <i class="fas fa-arrow-circle-right text__green"></i>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="grid-x">
-                <div class="cell small-12 large-6 medium-12 margin__b--30">
-                    <div class="bg__color--white padding__xy--10 border--radius5">
-                        <div class="grid-x">
-                            <div class="cell medium-2">
 
-                            </div>
-                            <div class="cell medium-10">
-                                <div class="grid-x justify__between">
-                                    <h3 class="text font__weight--bold font__size--16 color__black">
-                                        Max Verstappen <span class=" margin__l--10 color__secondary font__weight--bold font__size--14">F1
-                                            COUREUR</span>
-                                    </h3>
-                                    <ul class="grid-x">
-                                        <li class="margin__x--3">
-                                            <span class="fas fa-star color__yellow font__size--14"></span>
-                                        </li>
-                                        <li class="margin__x--3">
-                                            <span class="fas fa-star color__yellow font__size--14"></span>
-                                        </li>
-                                        <li class="margin__x--3">
-                                            <span class="fas fa-star color__yellow font__size--14"></span>
-                                        </li>
-                                        <li class="margin__x--3">
-                                            <span class="fas fa-star color__yellow font__size--14"></span>
-                                        </li>
-                                        <li class="margin__x--3">
-                                            <span class="fas fa-star color__yellow font__size--14"></span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <p class="text font__size--16 line__height--94 opacity--64">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit...
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-x">
-                <div class="cell small-12 large-6 medium-12">
-                    <div class="bg__color--white padding__xy--10 border--radius5">
-                        <div class="grid-x">
-                            <div class="cell medium-2">
-
-                            </div>
-                            <div class="cell medium-10">
-                                <div class="grid-x justify__between">
-                                    <h3 class="text font__weight--bold font__size--16 color__black">
-                                        Daphne Schippers <span class=" margin__l--10 color__secondary font__weight--bold font__size--14">HARDLOPER</span>
-                                    </h3>
-                                    <ul class="grid-x">
-                                        <li class="margin__x--3">
-                                            <span class="fas fa-star color__yellow font__size--14"></span>
-                                        </li>
-                                        <li class="margin__x--3">
-                                            <span class="fas fa-star color__yellow font__size--14"></span>
-                                        </li>
-                                        <li class="margin__x--3">
-                                            <span class="fas fa-star color__yellow font__size--14"></span>
-                                        </li>
-                                        <li class="margin__x--3">
-                                            <span class="fas fa-star color__yellow font__size--14"></span>
-                                        </li>
-                                        <li class="margin__x--3">
-                                            <span class="fas fa-star color__yellow font__size--14"></span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <p class="text font__size--16 line__height--94 opacity--64">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit...
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
+        <div class="section__review--image" style="background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/BkhOrZHFirkz60ou/cell-phone-in-hand-internet-browsing_rgoj0r3dg_thumbnail-full01.png)"></div>
     </section>
-    <section class="section__bgColor--white padding__y--75">
+
+    <section class="section__product">
         <div class="grid-container">
-            <div class="grid-x">
-                <div class="cell medium-6 large-6">
-
-                </div>
-                <div class="cell medium-6 large-6">
-                    <h3 class="text font__size--28 font__weight--bold margin__b--20 font__family--sourcesans">
-                        De oplossing is een <span class="color__primary">Safe-ID</span> armband
-                    </h3>
-                    <div class="grid-x">
-                        <div class="cell medium-12 large-12">
-                            <p class="text font__size--17 line__height--33 margin__b--30">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Aenean imperdiet tempus arcu,
-                                at
-                                <a href="#" class="text color__secondary text__decoration--underline padding__b-5">convallis</a>
-                                tortor <br>volutpat eget. Duis ullamcorper felis sodales.
-                            </p>
-                            <div class="grid-x">
-                                <div class="cell medium-4">
-                                    <h5 class="text color__gray font__size--13 margin__xy--0">
-                                        VANAF
-                                    </h5>
-                                    <p class="text color__secondary font__size--38">
-                                        € 19,95
-                                    </p>
-                                </div>
-                                <div class="cell medium-4">
-                                    <h5 class="text color__gray font__size--13 margin__xy--0">
-                                        MAAT
-                                    </h5>
-                                </div>
-                                <div class="cell medium-4">
-                                    <h5 class="text color__gray font__size--13 margin__xy--0">
-                                        KLEUR
-                                    </h5>
-                                </div>
-                            </div>
-                            <div class="cell medium-12">
-                                <button class="text color__white bg__color--secondary padding__xy--15 border--radius5 margin__t--20 font__weight--bold">
-                                    <a href="#" class="text">
-                                        Bestel de Safe-ID armband nu meteen
-                                    </a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section__bgColor--gray padding__y--100">
-        <div class="grid-container">
-            <h2 class="text font__size--28 text-center font__weight--bold margin__b--50 font__family--sourcesans">
-                <span class="color__primary">Meest verkochte</span> producten
-            </h2>
             <div class="grid-x grid-margin-x">
-                <div class="cell small-12 medium-6 large-3 justify__between">
-                    <div class="card border--radius5">
-                        <div class="card-section">
-                            <img src="app/images/fitness-tracker.jpg" class="w-100" alt="">
-                            <div class="product-price display--flex justify__between">
-                                <h4 class="text font__size--19 font__weight--bold margin__b--20">Product 1</h4>
-                                <p class="text color__primary">€ 19,95</p>
+                <div class="cell small-12 medium-5 large-5 cell__center">
+                    <img src="https://i5.walmartimages.com/asr/2e1a96ff-2f36-4617-9903-9dd1ef25cb0d_1.e884a2d381eee92a78b9b3b84c92d189.jpeg?odnBg=ffffff&amp;odnBound=171"
+                        alt="">
+                </div>
+                <div class="cell small-12 medium-7 large-7">
+                    <h2 class="text text__main text__black">De oplossing is een <span class="text__green">Safe-ID</span>
+                        armband </h2>
+                    <p class="text text__desc"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                        imperdiet tempus arcu, at <a href="#" class="text__link">convallis </a> tortor volutpat eget.
+                        Duis ullamcorper felis sodales.
+                    </p>
+                    <div class="grid-x grid-margin-x">
+                        <div class="cell small-12 medium-4 large-4">
+                            <h4 class="text text__mini"> VANAF </h4>
+                            <div class="set__height">
+                                <div class="text text__price">€ 19,95</div>
                             </div>
-                            <button class="bg__color--white padding__y--10  border--radius5 width--100 font__size--16 font__weight--bold border__width--1 border__style--solid border__color--secondary">
-                                <a href="#" class="text color__secondary">Meer informatie</a>
-                            </button>
+                        </div>
+                        <div class="cell small-12 medium-4 large-4">
+                            <h4 class="text text__mini"> MATT </h4>
+                            <div class="set__height">
+                                <div class="matt matt__grey">S</div>
+                                <div class="matt matt__grey matt__active">M</div>
+                                <div class="matt matt__grey">L</div>
+                            </div>
+                        </div>
+                        <div class="cell small-12 medium-4 large-4">
+                            <h4 class="text text__mini"> KLEUR </h4>
+                            <div class="set__height">
+                                <div class="kleur kleur__blue kleur__active"><span> </span></div>
+                                <div class="kleur kleur__red"><span> </span></div>
+                                <div class="kleur kleur__black"><span> </span></div>
+                                <div class="kleur kleur__green"><span> </span></div>
+                                <div class="kleur kleur__purple"><span> </span></div>
+                            </div>
                         </div>
                     </div>
+                    <button class="btn btn__blue btn__full">
+                        <span class="btn__text">Bestel de Safe-ID armband nu meteen </span>
+                        <i class="fas fa-arrow-circle-right btn__icon"></i>
+                    </button>
                 </div>
-                <div class="cell small-12 medium-6 large-3 justify__between">
-                    <div class="card border--radius5">
-                        <div class="card-section">
-                            <img src="app/images/fitness-tracker.jpg" class="w-100" alt="">
-                            <div class="product-price display--flex justify__between">
-                                <h4 class="text font__size--19 font__weight--bold margin__b--20">Product 1</h4>
-                                <p class="text color__primary">€ 19,95</p>
-                            </div>
-                            <button class="bg__color--white padding__y--10 border__width--1 border__style--solid border__color--secondary border--radius5 width--100 font__size--16 font__weight--bold">
-                                <a href="#" class="color__secondary">Meer informatie</a>
-                            </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__grey">
+        <div class="grid-container">
+            <h2 class="text text__main"> <span class="text__green"> Meest verkocthe</span> producten </h2>
+            <div class="grid-x grid-margin-x">
+                <div class="cell small-12 medium-6 large-3">
+                    <div class="card">
+                        <img src="https://i5.walmartimages.com/asr/2e1a96ff-2f36-4617-9903-9dd1ef25cb0d_1.e884a2d381eee92a78b9b3b84c92d189.jpeg?odnBg=ffffff&odnBound=171"
+                            alt="">
+                        <div class="card__desc">
+                            <h4 class="text card__desc--title">Product 1</h4>
+                            <p class="text text__green card__desc--price">€ 19,95</p>
                         </div>
+                        <a href="#" class="btn btn__outline"><span class="btn__text text__blue">Meer informatie </span></a>
                     </div>
                 </div>
-                <div class="cell small-12 medium-6 large-3 justify__between">
-                    <div class="card border--radius5">
-                        <div class="card-section">
-                            <img src="app/images/fitness-tracker.jpg" class="w-100" alt="">
-                            <div class="product-price display--flex justify__between">
-                                <h4 class="text font__size--19 font__weight--bold margin__b--20">Product 1</h4>
-                                <p class="text color__primary">€ 19,95</p>
-                            </div>
-                            <button class="bg__color--white padding__y--10 border__width--1 border__style--solid border__color--secondary border--radius5 width--100 font__size--16 font__weight--bold">
-                                <a href="#" class="color__secondary">Meer informatie</a>
-                            </button>
+                <div class="cell small-12 medium-6 large-3">
+                    <div class="card">
+                        <img src="https://i5.walmartimages.com/asr/2e1a96ff-2f36-4617-9903-9dd1ef25cb0d_1.e884a2d381eee92a78b9b3b84c92d189.jpeg?odnBg=ffffff&odnBound=171"
+                            alt="">
+                        <div class="card__desc">
+                            <h4 class="text card__desc--title">Product 1</h4>
+                            <p class="text text__green card__desc--price">€ 19,95</p>
                         </div>
+                        <a href="#" class="btn btn__outline"><span class="btn__text text__blue">Meer informatie </span></a>
                     </div>
                 </div>
-                <div class="cell small-12 medium-6 large-3 justify__between">
-                    <div class="card border--radius5">
-                        <div class="card-section">
-                            <img src="app/images/fitness-tracker.jpg" class="w-100" alt="">
-                            <div class="product-price display--flex justify__between">
-                                <h4 class="text font__size--19 font__weight--bold margin__b--20">Product 1</h4>
-                                <p class="text color__primary">€ 19,95</p>
-                            </div>
-                            <button class="bg__color--white border__width--1 border__style--solid border__color--secondary padding__y--10 border--radius5 width--100 font__size--16 font__weight--bold">
-                                <a href="#" class="color__secondary">Meer informatie</a>
-                            </button>
+                <div class="cell small-12 medium-6 large-3">
+                    <div class="card">
+                        <img src="https://i5.walmartimages.com/asr/2e1a96ff-2f36-4617-9903-9dd1ef25cb0d_1.e884a2d381eee92a78b9b3b84c92d189.jpeg?odnBg=ffffff&odnBound=171"
+                            alt="">
+                        <div class="card__desc">
+                            <h4 class="text card__desc--title">Product 1</h4>
+                            <p class="text text__green card__desc--price">€ 19,95</p>
                         </div>
+                        <a href="#" class="btn btn__outline"><span class="btn__text text__blue">Meer informatie </span></a>
+                    </div>
+                </div>
+                <div class="cell small-12 medium-6 large-3">
+                    <div class="card">
+                        <img src="https://i5.walmartimages.com/asr/2e1a96ff-2f36-4617-9903-9dd1ef25cb0d_1.e884a2d381eee92a78b9b3b84c92d189.jpeg?odnBg=ffffff&odnBound=171"
+                            alt="">
+                        <div class="card__desc">
+                            <h4 class="text card__desc--title">Product 1</h4>
+                            <p class="text text__green card__desc--price">€ 19,95</p>
+                        </div>
+                        <a href="#" class="btn btn__outline"><span class="btn__text text__blue">Meer informatie </span></a>
                     </div>
                 </div>
             </div>
 
         </div>
     </section>
-    <section class="section__bgColor--black padding__y--30 color__white">
+
+    <section class="section__dark section__cta">
         <div class="grid-container">
             <div class="grid-x">
-                <div class="cell large-6 medium-6">
-                    <p class="text font__size--24 font__family--sourcesans margin__r--35">
+                <div class="cell small-12 medium-6 large-6 cell__right">
+                    <p class="text text__big text__white">
                         Wil je je Safe ID-koppelen?
                     </p>
                 </div>
-                <div class="cell large-6 medium-6">
-                    <button class="bg__color--secondary color__white border--radius5 padding__xy--15 font__weight--bold">
-                        Koppel je Safe-ID nu meteen
+                <div class="cell small-12 medium-6 large-6 ">
+                    <button class="btn btn__blue">
+                        <span class="btn__text"> Koppel je Safe-ID nu meteen </span>
+                        <i class="fas fa-arrow-circle-right btn__icon"></i>
                     </button>
                 </div>
             </div>
         </div>
+
     </section>
-    <footer class="section__bgColor--primary padding__y--70">
+
+    <footer class="footer section__green">
         <div class="grid-container">
             <div class="grid-x">
                 <div class="cell small-12 medium-4 large-3">
-                    <div class="footer-section color__white">
-                        <h3 class="text section-headline font__weight--bold font__size--17 margin__b--10">
-                            SAFE-ID
-                        </h3>
-                        <ul>
-                            <li class="font__family--sourcesans">
-                                <a href="#">Contact</a>
-                            </li>
-                            <li class="font__family--sourcesans">
-                                <a href="#">Klantenservice</a>
-                            </li>
-                            <li class="font__family--sourcesans">
-                                <a href="#">Verkooppunten</a>
-                            </li>
-                            <li class="font__family--sourcesans">
-                                <a href="#">Dealer worden?</a>
-                            </li>
-                        </ul>
-                    </div>
+                    <h3 class="text text__title">
+                        SAFE-ID
+                    </h3>
+                    <ul class="list list__unstyled">
+                        <li class="">
+                            <a class="text text__white text__secondary" href="#">Contact</a>
+                        </li>
+                        <li class="">
+                            <a class="text text__white text__secondary" href="#">Klantenservice</a>
+                        </li>
+                        <li class="">
+                            <a class="text text__white text__secondary" href="#">Verkooppunten</a>
+                        </li>
+                        <li class="">
+                            <a class="text text__white text__secondary" href="#">Dealer worden?</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="cell small-12 medium-4 large-4">
-                    <div class="footer-section color__white">
-                        <h3 class="text section-headline font__weight--bold font__size--17 margin__b--10">
-                            NUTTIGE LINKS
-                        </h3>
-                        <ul>
-                            <li class="font__family--sourcesans">
-                                <a href="#">QR Code Reader (iOS)</a>
-                            </li>
-                            <li class="font__family--sourcesans">
-                                <a href="#">QR Code Reader (Android)</a>
-                            </li>
-                            <li class="font__family--sourcesans">
-                                <a href="#">QR Code Reader (Windows Mobile)</a>
-                            </li>
-                            <li class="font__family--sourcesans">
-                                <a href="#">KNAU Hardloopkalender</a>
-                            </li>
-                            <li class="font__family--sourcesans">
-                                <a href="#">KNAU Fietskalender</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+
                 <div class="cell small-12 medium-4 large-3">
                     <div class="footer-section color__white">
-                        <h3 class="text section-headline font__weight--bold font__size--17 margin__b--10">
-                            VOLG SAFE-ID
+                        <h3 class="text text__title">
+                            NUTTIGE LINKS
                         </h3>
-                        <ul class="media-list display--flex width--100">
-                            <li class="margin__r--10">
-                                <a href="#"><i class="fab fa-facebook-square font__size--37"></i></a>
+                        <ul class="list list__unstyled">
+                            <li class="">
+                                <a class="text text__white text__secondary" href="#">QR Code Reader (iOS)</a>
                             </li>
-                            <li class="margin__r--10">
-                                <a href="#"><i class="fab fa-twitter-square font__size--37"></i></a>
+                            <li class="">
+                                <a class="text text__white text__secondary">QR Code Reader (Android)</a>
                             </li>
-                            <li class="margin__r--10">
-                                <a href="#"><i class="fab fa-linkedin font__size--37"></i></a>
+                            <li class="">
+                                <a class="text text__white text__secondary">QR Code Reader (Windows Mobile)</a>
                             </li>
-                            <li class="margin__r--10">
-                                <a href="#"><i class="fab fa-youtube-square font__size--37"></i></a>
+                            <li class="">
+                                <a class="text text__white text__secondary">KNAU Hardloopkalender</a>
+                            </li>
+                            <li class="">
+                                <a class="text text__white text__secondary">KNAU Fietskalender</a>
                             </li>
                         </ul>
-                        <h3 class="section-headline font__weight--bold font__size--17 margin__t--10">
+                    </div>
+                </div>
+
+                <div class="cell small-12 medium-4 large-3">
+                    <div class="footer-section color__white">
+                        <h3 class="text text__title">
+                            VOLG SAFE-ID
+                        </h3>
+                        <ul class="list list__unstyled list__x">
+                            <li class="m__r--15">
+                                <a href="#" class="text__icon"><i class="fab fa-facebook-square font__size--37"></i></a>
+                            </li>
+                            <li class="m__r--15">
+                                <a href="#" class="text__icon"><i class="fab fa-twitter-square font__size--37"></i></a>
+                            </li>
+                            <li class="m__r--15">
+                                <a href="#" class="text__icon"><i class="fab fa-linkedin font__size--37"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="text__icon"><i class="fab fa-youtube-square font__size--37"></i></a>
+                            </li>
+                        </ul>
+                        <h3 class="text text__title">
                             NIEUWSBRIEF
                         </h3>
+
                         <div class="grid-x">
-                            <div class="medium-4 large-8 cell">
-                                <div class="input-group">
-                                    <input class="input-group-field" type="text" placeholder="Vul hier je emailadres in">
-                                    <div class="input-group-button">
-                                        <i class="fas fa-arrow-circle-right"></i>
-                                    </div>
-                                </div>
+                            <div class="input-group input-group-icon">
+                                <input type="text" placeholder="Vul hier je emailadres in" />
+                                <button class="input-icon"> <i class="fas fa-arrow-circle-right"></i> </button>
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </footer>
-    <section class="footer-copyright padding__y--30">
+
+    <section class="copyright">
         <div class="grid-container">
             <div class="grid-x">
-                <div class="cell large-4 small-12 medium-4">
-                    <p class="text">
-                        All rights reserved - 2019
-                    </p>
+                <div class="cell cell__vertical large-4 small-12 medium-4">
+                    <p class="text text__grey"> All rights reserved - 2019 </p>
                 </div>
-                <div class="cell large-4 small-12 medium-4">
-                    <p class="text">
-                        logo
-                    </p>
+                <div class="cell cell__center large-4 small-12 medium-4">
+                    <img class="copyright__image" src="https://www.safe-id.nl/wp-content/themes/onebite-html5/img/logo-safeid.png"
+                        alt="Safe id" />
                 </div>
-                <div class="cell large-4 small-12 medium-4">
-                    <div class="copyright-link">
-                        <a href="#" class="color__black margin__r--10">Algemene voorwaarden </a>
-                        <a href="#" class="color__black"> Privacy policy</a>
-                    </div>
+                <div class="cell cell__justify--end cell__vertical large-4 small-12 medium-4">
+                    <a href="#" class="text text__grey m__r--15">Algemene voorwaarden </a>
+                    <a href="#" class="text text__grey"> Privacy policy</a>
                 </div>
             </div>
         </div>
     </section>
 
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.1/js/foundation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/5.1.3/what-input.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.1/dist/js/foundation.min.js" integrity="sha256-WUKHnLrIrx8dew//IpSEmPN/NT3DGAEmIePQYIEJLLs= sha384-53StQWuVbn6figscdDC3xV00aYCPEz3srBdV/QGSXw3f19og3Tq2wTRe0vJqRTEO sha512-X9O+2f1ty1rzBJOC8AXBnuNUdyJg0m8xMKmbt9I3Vu/UOWmSg5zG+dtnje4wAZrKtkopz/PEDClHZ1LXx5IeOw=="
+        crossorigin="anonymous"></script>
+
+
+
+
+
+    <script>
+        $(document).foundation();
+    </script>
 </body>
 
 </html>
